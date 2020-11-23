@@ -17,13 +17,7 @@ async function handleLogIn() {
         localStorage.setItem('token', token);
         console.log(token);
         localStorage.setItem('name', username);
-<<<<<<< HEAD
         window.location.replace('http://localhost:3002/quiz.html'); 
-=======
-
-        location.href = "/profile.html";
-        console.log("switch")
->>>>>>> 27b68dae2ca1b9eb14e218e33f898a34e0b4c96a
         return true;
     } catch (error) {
         alert(error);
@@ -45,13 +39,8 @@ async function createUser() {
                 pass: password,
             }
         })
-<<<<<<< HEAD
         window.location.replace('http://localhost:3002/logIn.html');
     } catch (error){
-=======
-        location.href('/logIn.html');
-    } catch (error) {
->>>>>>> 27b68dae2ca1b9eb14e218e33f898a34e0b4c96a
         alert(error + ": An account with this name already exists!");
     }
 }
@@ -59,9 +48,5 @@ async function createUser() {
 function logOut() {
     localStorage.removeItem('token');
     localStorage.removeItem('name');
-<<<<<<< HEAD
     window.location.replace('http://localhost:3002/index.html');
-=======
-    location.href('/index.html');
->>>>>>> 27b68dae2ca1b9eb14e218e33f898a34e0b4c96a
 }
