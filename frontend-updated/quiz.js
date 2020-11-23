@@ -7,6 +7,7 @@ var questionCount = 0;
 var tempCounter = 0;
 let finalRecipe;
 
+
 let success = false;
 
 
@@ -177,12 +178,13 @@ export async function findFinalRecipe(foodObjArr){
 
   let finalFoodType = foodObjArr[randomNumber].hits;                                 // gives the 10 recipes for that food type
 
-  let randomNumber2 = Math.floor(Math.random() * Math.floor(foodObjArr[randomNumber].hits));  // gives a random number to choose from the recipes
-
+  let randomNumber2 = Math.floor(Math.random() * Math.floor(finalFoodType.length));  // gives a random number to choose from the recipes
+  console.log(randomNumber2);
   console.log(finalFoodType);
 
-  finalRecipe = finalFoodType[randomNumber2];                               // gives the final random recipe for your mood
-
+  finalRecipe = finalFoodType[randomNumber2];     
+  //finalRecipe = finalFoodType[randomNumber2].recipe;                               // gives the final random recipe for your mood
+  console.log(finalRecipe);
   //allRecipes.push(finalRecipe);                                                       // pushes the recipe onto the list of all recipes
 
 }
@@ -270,7 +272,7 @@ export async function createRecipe(){
   
       $('#entirePage').replaceWith(popUp); 
     }
-  }, 1500);
+  }, 1000);
 
 }
 

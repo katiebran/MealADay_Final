@@ -18,16 +18,11 @@
     "rich": {
       "passwordHash": "$2a$10$RxnJiLrAXo9V7YqDT46BpOtbW3tvdlhHC1OIh9rwReYBLWm9YIIZa"
     },
-<<<<<<< HEAD
     "katie": {
       "passwordHash": "$2a$10$U1i8z2ISKLj7xRxMJsTTAeLxPRWd9uXu5ALzhhfOxYcs8vjcalDGu"
     },
     "katiebran": {
       "passwordHash": "$2a$10$fR3DLyjBhhow.Cj742xIbetlpFvUIY8ZfEFXZI03ME.abKi51GsTS"
-=======
-    "hey": {
-      "passwordHash": "$2a$10$oW5rvHGWbYCaASPASNsDeeB.UU5mN5xZVLU/GM5SiuCrfseLynJAe"
->>>>>>> 27b68dae2ca1b9eb14e218e33f898a34e0b4c96a
     }
   }
 }

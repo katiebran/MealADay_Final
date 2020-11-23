@@ -35,6 +35,9 @@
 //     //will have to write a code to only get one label
 // }
 
+import finalRecipe from './quiz.js';
+console.log(finalRecipe);
+
 async function pushRecipe() {
     
     const token = localStorage.getItem('token');
@@ -55,32 +58,34 @@ async function pushRecipe() {
 // CHANGE THIS!!!!
 async function saveRecipe(event) {
     event.preventDefault();
-    const recipeID = event.target.id;
-    let obj = await getRecipe(recipeID);
-    let name = obj.name;
-    const id = await stringToHash(name);
-    const ingredients = obj.ingredients;
-    const instructions = obj.instructions;
+    const recipe = finalRecipe;
+    //const id = await stringToHash(name);
     const tokenStr = localStorage.getItem('jwt');
     try {
         const res = await axios({
             method: 'post',
-            url: "http://localhost:3000/private/recipes/" + id,
+            url: "http://localhost:3000/private/recipes/",
             //WHAT DOES THIS MEAN \/
             headers: {Authorization: `Bearer ${tokenStr}`},
             "type": "merge",
             'data': {
-                'data': {
                     // "hah": "hah"
-                        'name': name,
-                        'ingredients': ingredients,
-                        'instructions': instructions,
-                }
-            }
+                        uri: recipe.uri,
+                        img: recipe.image,
+                        label: recipe.label,
+                        //createdAt: 'date',
+                        url: recipe.url,
+                        cals: recipe.calories,
+                        ingredients: recipe.ingredients,
+                        //dishType: dishLabels,
+                        dietLabel: recipe.dietLabels,
+                        healthLabel: recipe.healthLabels
+                    }
         });
 
         //MIGHT NOT NEED THIS - MIGHT BE HAPPENING IN QUIZ.JS
-        saveRecipeUser(id, name, ingredients, instructions);
+        //saveRecipeUser(id, name, ingredients, instructions);
+        console.log("final recipe successfully stored");
     } catch (error) {
         alert(error);
     }
@@ -173,6 +178,7 @@ $(function () {
 
     }
     */
+    
    pushRecipe();
    renderRecipeCard(recipe);
     $(document).on('click', '.edit', handleEditButton);
@@ -209,3 +215,5 @@ function getRandomLabel(labelArr){
     return label;
 
 }
+
+
