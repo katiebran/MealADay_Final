@@ -7,7 +7,7 @@ var questionCount = 0;
 var tempCounter = 0;
 let finalRecipe;
 
-let success = true;
+let success = false;
 
 
 // global array --- somehow make this a secret value ??
@@ -127,6 +127,7 @@ export async function makeFoodList(foodList){
   
       foodObjArr[i] = result.data;
     }
+    success = true;
   } catch(err){
     success = false;
    // console.log(success);
@@ -231,43 +232,46 @@ export async function createRecipe(){
     }
   makeFoodList(finalFoodArray);
  //console.log(success);
-  if(success){
-    let popUp = `<div id="entirePage">
-                <section class = "section">
-                <br>
-                <br>
-                <br>
-                <div class = "container">
+  setTimeout(function(){
+    if(success){
+      let popUp = `<div id="entirePage">
+                  <section class = "section">
                   <br>
                   <br>
-                  <div id = "modal" class = "modal is-active">
-                      <div class = "modal-background"></div>
-                        <div class = "modal-content">
-                            <div class="card">
-                                <div class="card-content">
-                                <p class="title" style="text-align:center">
-                                    Congratulations! 
-                                </p>
-                                <br>
-                                <p class="subtitle" style="text-align:center">
-                                    We have chosen a recipe for you based on your current mood
-                                </p>
-                            </div>
-                            <footer class="card-footer">
-                                <p class="card-footer-item">
-                                <a href="profile.html"><button class="button" id="profileButton">Go to My Recipe</button></a>
-                                </p>
-                            </footer>
-                        </div>
-                        </div>
-                        <button class = "modal-close is-large" aria-label = "close"></button>
-                    </div>
-                    </div>
-                </section>
-                </div>`;
+                  <br>
+                  <div class = "container">
+                    <br>
+                    <br>
+                    <div id = "modal" class = "modal is-active">
+                        <div class = "modal-background"></div>
+                          <div class = "modal-content">
+                              <div class="card">
+                                  <div class="card-content">
+                                  <p class="title" style="text-align:center">
+                                      Congratulations! 
+                                  </p>
+                                  <br>
+                                  <p class="subtitle" style="text-align:center">
+                                      We have chosen a recipe for you based on your current mood
+                                  </p>
+                              </div>
+                              <footer class="card-footer">
+                                  <p class="card-footer-item">
+                                  <a href="profile.html"><button class="button" id="profileButton">Go to My Recipe</button></a>
+                                  </p>
+                              </footer>
+                          </div>
+                          </div>
+                          <button class = "modal-close is-large" aria-label = "close"></button>
+                      </div>
+                      </div>
+                  </section>
+                  </div>`;
+  
+      $('#entirePage').replaceWith(popUp); 
+    }
+  }, 1500);
 
-    $('#entirePage').replaceWith(popUp); 
-  }
 }
 
 // export const handleProfileButton = function(event){
