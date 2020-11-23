@@ -37,8 +37,6 @@
 
 async function pushRecipe() {
     
-
-
     const token = localStorage.getItem('token');
     try{
         const res = await axios({
@@ -51,6 +49,10 @@ async function pushRecipe() {
         alert(error);
     }
 }
+
+
+
+// CHANGE THIS!!!!
 async function saveRecipe(event) {
     event.preventDefault();
     const recipeID = event.target.id;
@@ -64,6 +66,7 @@ async function saveRecipe(event) {
         const res = await axios({
             method: 'post',
             url: "http://localhost:3000/private/recipes/" + id,
+            //WHAT DOES THIS MEAN \/
             headers: {Authorization: `Bearer ${tokenStr}`},
             "type": "merge",
             'data': {
@@ -75,6 +78,8 @@ async function saveRecipe(event) {
                 }
             }
         });
+
+        //MIGHT NOT NEED THIS - MIGHT BE HAPPENING IN QUIZ.JS
         saveRecipeUser(id, name, ingredients, instructions);
     } catch (error) {
         alert(error);
