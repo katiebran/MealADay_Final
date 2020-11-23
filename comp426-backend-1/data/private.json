@@ -1,7 +1,481 @@
 {
-    "recipes": {
-
-      
-
+  "recipes": {
+    "\\[object Promise\\]": {
+      "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_decb658ec24b765db6a2dc5c7c592932",
+      "img": "https://www.edamam.com/web-img/745/745f3cfed84767d39dc2b7f7d5161904.jpg",
+      "label": "Buffalo Chicken Salad",
+      "url": "http://www.delish.com/cooking/recipe-ideas/recipes/a23965/buffalo-chicken-salad/",
+      "cals": 3260.4019999997904,
+      "ingredients": [
+        {
+          "text": "2 bag romaine salad mix",
+          "weight": 520,
+          "image": "https://www.edamam.com/food-img/b6d/b6d9f3052d27a3c71220cfa55c6f0a42.jpg"
+        },
+        {
+          "text": "1 container Carrot and celery sticks",
+          "weight": 0,
+          "image": "https://www.edamam.com/food-img/121/121e33fce0bb9546ed7d060b6c114e29.jpg"
+        },
+        {
+          "text": "1 container Carrot and celery sticks",
+          "weight": 40,
+          "image": "https://www.edamam.com/food-img/d91/d91d2aed1c36d8fad54c4d7dc58f5a18.jpg"
+        },
+        {
+          "text": "1 takeout order chicken fingers",
+          "weight": 1200,
+          "image": "https://www.edamam.com/food-img/d33/d338229d774a743f7858f6764e095878.jpg"
+        },
+        {
+          "text": "2 tbsp. cayenne pepper sauce",
+          "weight": 28.19999999809289,
+          "image": "https://www.edamam.com/food-img/946/946c38a4c278da4361d2615d653d685a.jpg"
+        },
+        {
+          "text": "½ c. blue cheese salad dressing",
+          "weight": 122.5,
+          "image": "https://www.edamam.com/food-img/06f/06fde1f5c1a30fbc87e0a5c0052ba4dd.jpg"
+        }
+      ],
+      "dietLabel": [],
+      "healthLabel": [
+        "Peanut-Free",
+        "Tree-Nut-Free",
+        "Alcohol-Free"
+      ]
+    },
+    "Shrimp Salad": {
+      "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_f38bcef5962fcb27cb84a75fdf997942",
+      "img": "https://www.edamam.com/web-img/a35/a35a9ea5a5b0e712d8193b5ca61201d5.jpg",
+      "label": "Shrimp Salad",
+      "url": "http://www.cookstr.com/recipes/shrimp-salad-mimi-sheraton",
+      "cals": 1320.3357247460413,
+      "ingredients": [
+        {
+          "text": "1 pound medium-sized shrimp, cooked, shelled and de-veined",
+          "weight": 453.59237,
+          "image": "https://www.edamam.com/food-img/ebe/ebe2888b894f48d19762e1d606db0206.jpg"
+        },
+        {
+          "text": "1 tablespoon minced onion",
+          "weight": 10,
+          "image": "https://www.edamam.com/food-img/205/205e6bf2399b85d34741892ef91cc603.jpg"
+        },
+        {
+          "text": "1 tablespoon minced parsley",
+          "weight": 3.8,
+          "image": "https://www.edamam.com/food-img/46a/46a132e96626d7989b4d6ed8c91f4da0.jpg"
+        },
+        {
+          "text": "Salt and pepper to taste",
+          "weight": 3.714854219998453,
+          "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
+        },
+        {
+          "text": "Salt and pepper to taste",
+          "weight": 1.8574271099992266,
+          "image": "https://www.edamam.com/food-img/c6e/c6e5c3bd8d3bc15175d9766971a4d1b2.jpg"
+        },
+        {
+          "text": "1 tablespoon lemon juice",
+          "weight": 15.2499999997422,
+          "image": "https://www.edamam.com/food-img/e31/e310952d214e78a4cb8b73f30ceeaaf2.jpg"
+        },
+        {
+          "text": "½ cup mayonnaise",
+          "weight": 115.5,
+          "image": null
+        },
+        {
+          "text": "1½ tablespoons salad oil",
+          "weight": 21,
+          "image": "https://www.edamam.com/food-img/07e/07e106ab3536d57428e5c46d009038f8.jpg"
+        }
+      ],
+      "dietLabel": [
+        "Low-Carb"
+      ],
+      "healthLabel": [
+        "Sugar-Conscious",
+        "Peanut-Free",
+        "Tree-Nut-Free",
+        "Alcohol-Free"
+      ]
+    },
+    "Fish Tacos": {
+      "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_414fa022b90b29f221ae5132dd778585",
+      "img": "https://www.edamam.com/web-img/ba3/ba36a1358321a2f9efcd8d71617b9a76.jpg",
+      "label": "Fish Tacos",
+      "url": "http://www.myrecipes.com/recipe/fish-tacos-3",
+      "cals": 764.1500000000937,
+      "ingredients": [
+        {
+          "text": "1 1/2 tablespoons reduced-fat sour cream",
+          "weight": 18,
+          "image": null
+        },
+        {
+          "text": "1 tablespoon minced fresh cilantro",
+          "weight": 0.999999999983093,
+          "image": "https://www.edamam.com/food-img/d57/d57e375b6ff99a90c7ee2b1990a1af36.jpg"
+        },
+        {
+          "text": "1 1/2 teaspoons fresh lime juice",
+          "weight": 7.700000000390553,
+          "image": "https://www.edamam.com/food-img/8f0/8f0c10eb3dbf476a05e61018e76ea220.jpg"
+        },
+        {
+          "text": "1/2 teaspoon red wine vinegar",
+          "weight": 2.5,
+          "image": "https://www.edamam.com/food-img/dc8/dc8e998b32b8d45ba15c1b1e6711e958.jpg"
+        },
+        {
+          "text": "4 (6-inch) corn tortillas",
+          "weight": 96,
+          "image": "https://www.edamam.com/food-img/b8a/b8ad23dcc06f2324f944e47eb579d644.jpg"
+        },
+        {
+          "text": "2 Margarita Grouper Fillets, flaked",
+          "weight": 518,
+          "image": "https://www.edamam.com/food-img/2e7/2e73d1e1d916d02e81bb4c615cbf47f2.jpg"
+        },
+        {
+          "text": "1/2 cup vertically sliced red onion",
+          "weight": 57.5,
+          "image": "https://www.edamam.com/food-img/205/205e6bf2399b85d34741892ef91cc603.jpg"
+        },
+        {
+          "text": "1 lime, quartered",
+          "weight": 67,
+          "image": "https://www.edamam.com/food-img/48a/48a123c9576647c4ada6a41df5eeb22a.jpg"
+        }
+      ],
+      "dietLabel": [
+        "High-Protein",
+        "Low-Fat"
+      ],
+      "healthLabel": [
+        "Sugar-Conscious",
+        "Peanut-Free",
+        "Tree-Nut-Free",
+        "Alcohol-Free"
+      ]
+    },
+    "Chicken Liver Pâté": {
+      "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_9ca0499f2ac7f1e4cae63bdf4671c1b3",
+      "img": "https://www.edamam.com/web-img/480/480000e79dbdd4648c4acd65630ff654.jpg",
+      "label": "Chicken Liver Pâté",
+      "url": "http://www.saveur.com/article/Recipes/Classic-Chicken-Pate",
+      "cals": 1149.3071579176606,
+      "ingredients": [
+        {
+          "text": "8 oz. chicken livers, cleaned",
+          "weight": 226.796185,
+          "image": "https://www.edamam.com/food-img/9aa/9aa4760ac12b682555a37a1cdc91150b.jpg"
+        },
+        {
+          "text": "4 cups chicken stock",
+          "weight": 960,
+          "image": "https://www.edamam.com/food-img/26a/26a10c4cb4e07bab54d8a687ef5ac7d8.jpg"
+        },
+        {
+          "text": "2 tbsp. rendered chicken fat or unsalted butter",
+          "weight": 28.2499999995224,
+          "image": null
+        },
+        {
+          "text": "½ medium yellow onion, minced",
+          "weight": 55,
+          "image": "https://www.edamam.com/food-img/205/205e6bf2399b85d34741892ef91cc603.jpg"
+        },
+        {
+          "text": "1½ tbsp. cognac or brandy",
+          "weight": 20.9999999995266,
+          "image": "https://www.edamam.com/food-img/1d7/1d785da8ce8dca92df262103058b05d1.jpg"
+        },
+        {
+          "text": "2 hard-boiled eggs",
+          "weight": 80,
+          "image": "https://www.edamam.com/food-img/e54/e54c012fabed0f9cf211a817d1e23c5c.jpg"
+        },
+        {
+          "text": "Kosher salt and freshly ground black pepper, to taste",
+          "weight": 8.370277109994293,
+          "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
+        },
+        {
+          "text": "Kosher salt and freshly ground black pepper, to taste",
+          "weight": 4.185138554997146,
+          "image": "https://www.edamam.com/food-img/c6e/c6e5c3bd8d3bc15175d9766971a4d1b2.jpg"
+        },
+        {
+          "text": "Toast points, for serving",
+          "weight": 24,
+          "image": "https://www.edamam.com/food-img/6c0/6c0c1e866e0106b960d1463a9bdc54db.jpg"
+        }
+      ],
+      "dietLabel": [],
+      "healthLabel": [
+        "Sugar-Conscious",
+        "Peanut-Free",
+        "Tree-Nut-Free"
+      ]
+    },
+    "BLT Pasta Salad Recipe": {
+      "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_7019d94bc660524a1f160edd7d16b2db",
+      "img": "https://www.edamam.com/web-img/813/813e3be690806c1cff5c387a850550eb.jpg",
+      "label": "BLT Pasta Salad Recipe",
+      "url": "http://www.thedailymeal.com/blt-pasta-salad-recipe",
+      "cals": 1472.4767888336098,
+      "ingredients": [
+        {
+          "text": "1 6.2-ounce package pasta salad mix, such as Betty Crocker Suddenly Salad Creamy Parmesan mix",
+          "weight": 175.7670379677576,
+          "image": "https://www.edamam.com/food-img/f58/f588658627c59d5041e4664119829aa9.jpg"
+        },
+        {
+          "text": "1 medium tomato, seeded and chopped",
+          "weight": 123,
+          "image": "https://www.edamam.com/food-img/23e/23e727a14f1035bdc2733bb0477efbd2.jpg"
+        },
+        {
+          "text": "6 bacon strips, cooked and crumbled",
+          "weight": 174,
+          "image": "https://www.edamam.com/food-img/d42/d426884a125fa39a70d5a5d7217864ec.jpg"
+        },
+        {
+          "text": "5 Cups torn lettuce",
+          "weight": 275,
+          "image": "https://www.edamam.com/food-img/719/71996625d0cb47e197093ecd52c97dc2.jpg"
+        }
+      ],
+      "dietLabel": [
+        "Low-Carb"
+      ],
+      "healthLabel": [
+        "Sugar-Conscious",
+        "Peanut-Free",
+        "Tree-Nut-Free",
+        "Alcohol-Free",
+        "Immuno-Supportive"
+      ]
+    },
+    "Mango and Shrimp Salad": {
+      "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_e2a04a8cd05720a8105047614b73dd9c",
+      "img": "https://www.edamam.com/web-img/2a9/2a93083acb831389089ff87659cf5039.jpg",
+      "label": "Mango and Shrimp Salad",
+      "url": "https://food52.com/recipes/1976-mango-and-shrimp-salad",
+      "cals": 1552.5865599999142,
+      "ingredients": [
+        {
+          "text": "1 big ripe mango",
+          "weight": 336,
+          "image": "https://www.edamam.com/food-img/6e0/6e04857756d0876f14bfc035ff238e0b.png"
+        },
+        {
+          "text": "1/3 cup canola oil",
+          "weight": 72.66666666666666,
+          "image": "https://www.edamam.com/food-img/07e/07e106ab3536d57428e5c46d009038f8.jpg"
+        },
+        {
+          "text": "1 lime - juice",
+          "weight": 44,
+          "image": "https://www.edamam.com/food-img/8f0/8f0c10eb3dbf476a05e61018e76ea220.jpg"
+        },
+        {
+          "text": "1 tablespoon fresh ginger juice (grate the ginger and then squeeze the juice)",
+          "weight": 5.99999999989856,
+          "image": "https://www.edamam.com/food-img/b9c/b9c06ef451ef29513880af0a53ebbaa6.jpg"
+        },
+        {
+          "text": "2 teaspoons curry powder",
+          "weight": 4,
+          "image": "https://www.edamam.com/food-img/9ce/9ce02a2887385fd2adaec8dd8adcf9c5.jpg"
+        },
+        {
+          "text": "Sechuan pepper",
+          "weight": 2.8054999999996952,
+          "image": "https://www.edamam.com/food-img/c6e/c6e5c3bd8d3bc15175d9766971a4d1b2.jpg"
+        },
+        {
+          "text": "Salt",
+          "weight": 5.6109999999993905,
+          "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
+        },
+        {
+          "text": "30 fresh shrimps, skin removed and deveined",
+          "weight": 180,
+          "image": "https://www.edamam.com/food-img/ebe/ebe2888b894f48d19762e1d606db0206.jpg"
+        },
+        {
+          "text": "3 tablespoons extra virgin olive oil",
+          "weight": 40.5,
+          "image": null
+        },
+        {
+          "text": "Sechuan pepper",
+          "weight": 2.8054999999996952,
+          "image": "https://www.edamam.com/food-img/c6e/c6e5c3bd8d3bc15175d9766971a4d1b2.jpg"
+        },
+        {
+          "text": "Salad seasoning",
+          "weight": 9.35166666666565,
+          "image": "https://www.edamam.com/food-img/c23/c23e20823b442067307aa436969358f1.jpg"
+        },
+        {
+          "text": "1 small ripe mango cut in little cubes",
+          "weight": 252,
+          "image": "https://www.edamam.com/food-img/6e0/6e04857756d0876f14bfc035ff238e0b.png"
+        },
+        {
+          "text": "Black hawaian salt for garnish",
+          "weight": 5.6109999999993905,
+          "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
+        }
+      ],
+      "dietLabel": [],
+      "healthLabel": [
+        "Peanut-Free",
+        "Tree-Nut-Free",
+        "Alcohol-Free",
+        "Immuno-Supportive"
+      ]
+    },
+    "Buffalo Chicken Salad recipes": {
+      "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_087a8931b23d89b0e64236e7b3b52e2e",
+      "img": "https://www.edamam.com/web-img/b5b/b5baa361c0a1dfdf08d13f13c3a513d9",
+      "label": "Buffalo Chicken Salad recipes",
+      "url": "http://www.goodhousekeeping.com/food-recipes/a3338/buffalo-chicken-salad/",
+      "cals": 3260.4019999997904,
+      "ingredients": [
+        {
+          "text": "2 bag romaine salad mix",
+          "weight": 520,
+          "image": "https://www.edamam.com/food-img/b6d/b6d9f3052d27a3c71220cfa55c6f0a42.jpg"
+        },
+        {
+          "text": "1 container Carrot and celery sticks",
+          "weight": 0,
+          "image": "https://www.edamam.com/food-img/121/121e33fce0bb9546ed7d060b6c114e29.jpg"
+        },
+        {
+          "text": "1 container Carrot and celery sticks",
+          "weight": 40,
+          "image": "https://www.edamam.com/food-img/d91/d91d2aed1c36d8fad54c4d7dc58f5a18.jpg"
+        },
+        {
+          "text": "1 takeout order chicken fingers",
+          "weight": 1200,
+          "image": "https://www.edamam.com/food-img/d33/d338229d774a743f7858f6764e095878.jpg"
+        },
+        {
+          "text": "2 tbsp. cayenne pepper sauce",
+          "weight": 28.19999999809289,
+          "image": "https://www.edamam.com/food-img/946/946c38a4c278da4361d2615d653d685a.jpg"
+        },
+        {
+          "text": "0.50 c. blue cheese salad dressing",
+          "weight": 122.5,
+          "image": "https://www.edamam.com/food-img/06f/06fde1f5c1a30fbc87e0a5c0052ba4dd.jpg"
+        }
+      ],
+      "dietLabel": [],
+      "healthLabel": [
+        "Peanut-Free",
+        "Tree-Nut-Free",
+        "Alcohol-Free"
+      ]
+    },
+    "Chicken Salad\\-Stuffed Tomatoes": {
+      "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_3abffa587abb91c3ce9956da629448ee",
+      "img": "https://www.edamam.com/web-img/86c/86c21bdb5ea3e2868b5ce9761a31ebc5.jpg",
+      "label": "Chicken Salad-Stuffed Tomatoes",
+      "url": "http://www.eatingwell.com/recipes/chicken_salad_stuffed_tomatoes.html",
+      "cals": 122.63605000000001,
+      "ingredients": [
+        {
+          "text": "4 plum tomatoes, halved",
+          "weight": 248,
+          "image": "https://www.edamam.com/food-img/23e/23e727a14f1035bdc2733bb0477efbd2.jpg"
+        },
+        {
+          "text": "2 teaspoons sliced fresh chives",
+          "weight": 2,
+          "image": "https://www.edamam.com/food-img/f3f/f3f48643a924ba174b894e979cb48620.jpg"
+        },
+        {
+          "text": "Freshly ground pepper, to taste",
+          "weight": 0.855,
+          "image": "https://www.edamam.com/food-img/c6e/c6e5c3bd8d3bc15175d9766971a4d1b2.jpg"
+        },
+        {
+          "text": "1/4 cup chicken salad",
+          "weight": 35,
+          "image": "https://www.edamam.com/food-img/d33/d338229d774a743f7858f6764e095878.jpg"
+        }
+      ],
+      "dietLabel": [],
+      "healthLabel": [
+        "Sugar-Conscious",
+        "Peanut-Free",
+        "Tree-Nut-Free",
+        "Alcohol-Free",
+        "Immuno-Supportive"
+      ]
+    },
+    "Italian Sausage Panini": {
+      "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_2bbd3932aacc4d9bcabb8c8983069376",
+      "img": "https://www.edamam.com/web-img/8f3/8f3784d591b88414dfcab6b8c79db7e5.jpg",
+      "label": "Italian Sausage Panini",
+      "url": "https://www.chowhound.com/recipes/italian-sausage-panini-31839",
+      "cals": 1607.7325333333333,
+      "ingredients": [
+        {
+          "text": "1 red bell pepper, thinly sliced",
+          "weight": 119,
+          "image": "https://www.edamam.com/food-img/4dc/4dc48b1a506d334b4ab6671b9d56a18f.jpeg"
+        },
+        {
+          "text": "1 tablespoon olive oil",
+          "weight": 13.5,
+          "image": null
+        },
+        {
+          "text": "4 slices Italian bread, sliced 1/2-inch thick",
+          "weight": 76.44444444444444,
+          "image": "https://www.edamam.com/food-img/19f/19fc0706f04d44f62fc79ab4d7a07d7b.jpg"
+        },
+        {
+          "text": "4 slices provolone cheese",
+          "weight": 112,
+          "image": "https://www.edamam.com/food-img/f91/f9153e23de712eaa8958ce387c4fb4a4.jpg"
+        },
+        {
+          "text": "2 pre-cooked Italian sausages, sliced 1/2-inch thick",
+          "weight": 226,
+          "image": "https://www.edamam.com/food-img/caf/cafaac36e1482d9bec67dd39393b5d12.jpg"
+        },
+        {
+          "text": "1 cup fresh baby spinach",
+          "weight": 9.99999999999999,
+          "image": "https://www.edamam.com/food-img/e6e/e6e4be375c4554ce01c8ea75232efaa6.jpg"
+        },
+        {
+          "text": "olive oil for brushing",
+          "weight": 7.5744444444444445,
+          "image": null
+        }
+      ],
+      "dietLabel": [
+        "Low-Carb"
+      ],
+      "healthLabel": [
+        "Sugar-Conscious",
+        "Peanut-Free",
+        "Tree-Nut-Free",
+        "Alcohol-Free"
+      ]
     }
+  }
 }

@@ -1,2 +1,111 @@
 {
+  "rich": {
+    "recipes": {
+      "Chicken Liver Pâté": {
+        "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_9ca0499f2ac7f1e4cae63bdf4671c1b3",
+        "img": "https://www.edamam.com/web-img/480/480000e79dbdd4648c4acd65630ff654.jpg",
+        "label": "Chicken Liver Pâté",
+        "url": "http://www.saveur.com/article/Recipes/Classic-Chicken-Pate",
+        "cals": 1149.3071579176606,
+        "ingredients": [
+          {
+            "text": "8 oz. chicken livers, cleaned",
+            "weight": 226.796185,
+            "image": "https://www.edamam.com/food-img/9aa/9aa4760ac12b682555a37a1cdc91150b.jpg"
+          },
+          {
+            "text": "4 cups chicken stock",
+            "weight": 960,
+            "image": "https://www.edamam.com/food-img/26a/26a10c4cb4e07bab54d8a687ef5ac7d8.jpg"
+          },
+          {
+            "text": "2 tbsp. rendered chicken fat or unsalted butter",
+            "weight": 28.2499999995224,
+            "image": null
+          },
+          {
+            "text": "½ medium yellow onion, minced",
+            "weight": 55,
+            "image": "https://www.edamam.com/food-img/205/205e6bf2399b85d34741892ef91cc603.jpg"
+          },
+          {
+            "text": "1½ tbsp. cognac or brandy",
+            "weight": 20.9999999995266,
+            "image": "https://www.edamam.com/food-img/1d7/1d785da8ce8dca92df262103058b05d1.jpg"
+          },
+          {
+            "text": "2 hard-boiled eggs",
+            "weight": 80,
+            "image": "https://www.edamam.com/food-img/e54/e54c012fabed0f9cf211a817d1e23c5c.jpg"
+          },
+          {
+            "text": "Kosher salt and freshly ground black pepper, to taste",
+            "weight": 8.370277109994293,
+            "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
+          },
+          {
+            "text": "Kosher salt and freshly ground black pepper, to taste",
+            "weight": 4.185138554997146,
+            "image": "https://www.edamam.com/food-img/c6e/c6e5c3bd8d3bc15175d9766971a4d1b2.jpg"
+          },
+          {
+            "text": "Toast points, for serving",
+            "weight": 24,
+            "image": "https://www.edamam.com/food-img/6c0/6c0c1e866e0106b960d1463a9bdc54db.jpg"
+          }
+        ],
+        "dietLabel": [],
+        "healthLabel": [
+          "Sugar-Conscious",
+          "Peanut-Free",
+          "Tree-Nut-Free"
+        ]
+      },
+      "Buffalo Chicken Salad recipes": {
+        "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_087a8931b23d89b0e64236e7b3b52e2e",
+        "img": "https://www.edamam.com/web-img/b5b/b5baa361c0a1dfdf08d13f13c3a513d9",
+        "label": "Buffalo Chicken Salad recipes",
+        "url": "http://www.goodhousekeeping.com/food-recipes/a3338/buffalo-chicken-salad/",
+        "cals": 3260.4019999997904,
+        "ingredients": [
+          {
+            "text": "2 bag romaine salad mix",
+            "weight": 520,
+            "image": "https://www.edamam.com/food-img/b6d/b6d9f3052d27a3c71220cfa55c6f0a42.jpg"
+          },
+          {
+            "text": "1 container Carrot and celery sticks",
+            "weight": 0,
+            "image": "https://www.edamam.com/food-img/121/121e33fce0bb9546ed7d060b6c114e29.jpg"
+          },
+          {
+            "text": "1 container Carrot and celery sticks",
+            "weight": 40,
+            "image": "https://www.edamam.com/food-img/d91/d91d2aed1c36d8fad54c4d7dc58f5a18.jpg"
+          },
+          {
+            "text": "1 takeout order chicken fingers",
+            "weight": 1200,
+            "image": "https://www.edamam.com/food-img/d33/d338229d774a743f7858f6764e095878.jpg"
+          },
+          {
+            "text": "2 tbsp. cayenne pepper sauce",
+            "weight": 28.19999999809289,
+            "image": "https://www.edamam.com/food-img/946/946c38a4c278da4361d2615d653d685a.jpg"
+          },
+          {
+            "text": "0.50 c. blue cheese salad dressing",
+            "weight": 122.5,
+            "image": "https://www.edamam.com/food-img/06f/06fde1f5c1a30fbc87e0a5c0052ba4dd.jpg"
+          }
+        ],
+        "dietLabel": [],
+        "healthLabel": [
+          "Peanut-Free",
+          "Tree-Nut-Free",
+          "Alcohol-Free"
+        ]
+      }
+    }
+  }
 }

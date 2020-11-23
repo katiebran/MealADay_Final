@@ -12,14 +12,8 @@
     "axios": "^0.21.0",
     "browser-sync": "^2.26.13",
     "bulma": "^0.9.1",
-<<<<<<< HEAD
-    "jquery": "^3.5.1",
-    "node": "^15.2.1"
-  }
-=======
     "jquery": "^3.5.1"
   },
   "devDependencies": {},
   "description": ""
->>>>>>> 27b68dae2ca1b9eb14e218e33f898a34e0b4c96a
 }

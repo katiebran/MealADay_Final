@@ -31,7 +31,7 @@
             <!-- Can't take quiz or view playlist until user is signed in-->
             <script>
               //console.log(localStorage.getItem('token'));
-              if(localStorage.getItem('token') != null){
+              if(localStorage.getItem('jwt') != null){
                 document.write(`<a href="./quiz.html" class="navbar-item brackets">Take Quiz</a>`);
               }
             </script>
@@ -41,7 +41,7 @@
             <div class="navbar-item">
               <div class="buttons">
                 <script>
-                  if(localStorage.getItem('token') == null){
+                  if(localStorage.getItem('jwt') == null){
                     document.write(`<a class="button is-dark " href="./signUp.html">
                                       <strong>Sign up</strong>
                                     </a>
@@ -51,7 +51,7 @@
                   }
                 </script>
                 <script>
-                    if(localStorage.getItem('token') != null){
+                    if(localStorage.getItem('jwt') != null){
                       document.write(`<a class="button is-dark " href="./logOut.html">
                                         <strong>Log Out</strong>
                                       </a>`);
@@ -78,14 +78,14 @@
 
                 <!-- Note: add href to quiz here -->
                 <script>
-                  if(localStorage.getItem('token') != null){
+                  if(localStorage.getItem('jwt') != null){
                     document.write(`<a href="./quiz.html"><button class="hvr-push yellow_button"> 
                                         Take Our Quiz
                                     </button></a>`);
                   }
                 </script>
                 <script>
-                  if(localStorage.getItem('token') == null){
+                  if(localStorage.getItem('jwt') == null){
                     document.write(`<a href="./signUp.html"><button class="hvr-push yellow_button"> 
                                       Sign Up
                                   </button></a>

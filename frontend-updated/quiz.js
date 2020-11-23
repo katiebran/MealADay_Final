@@ -7,12 +7,11 @@ var questionCount = 0;
 var tempCounter = 0;
 let finalRecipe;
 
-
 let success = false;
 
-
-// global array --- somehow make this a secret value ??
 let allRecipes = [];
+// global array --- somehow make this a secret value ??
+//exports.allRecipes = allRecipes;
 
 var tempData = copyData(questions);
 
@@ -155,7 +154,7 @@ export async function makeFoodList(foodList){
                             </div>
                             <footer class="card-footer">
                                 <p class="card-footer-item">
-                                <a href="index.html"><button class="button" id="profileButton">Return to Home</button></a>
+                                <a href="index.html"><button class="button profileButton" id="profileButton">Return to Home</button></a>
                                 </p>
                             </footer>
                         </div>
@@ -169,25 +168,81 @@ export async function makeFoodList(foodList){
     $('#entirePage').replaceWith(popUp);
   }
     
-  console.log(foodObjArr);
+  //console.log(foodObjArr);
   findFinalRecipe(foodObjArr);
 }
 
-export async function findFinalRecipe(foodObjArr){
+async function findFinalRecipe(foodObjArr){
   let randomNumber  = Math.floor(Math.random() * Math.floor(foodObjArr.length));     // give a random number to choose from the foot types
 
   let finalFoodType = foodObjArr[randomNumber].hits;                                 // gives the 10 recipes for that food type
 
   let randomNumber2 = Math.floor(Math.random() * Math.floor(finalFoodType.length));  // gives a random number to choose from the recipes
-  console.log(randomNumber2);
-  console.log(finalFoodType);
+  //console.log(randomNumber2);
+  //console.log(finalFoodType);
 
-  finalRecipe = finalFoodType[randomNumber2];     
+  finalRecipe = finalFoodType[randomNumber2]; 
+  
+  allRecipes.push(finalRecipe);
+  console.log(allRecipes);
   //finalRecipe = finalFoodType[randomNumber2].recipe;                               // gives the final random recipe for your mood
-  console.log(finalRecipe);
+  //console.log(finalRecipe);
   //allRecipes.push(finalRecipe);                                                       // pushes the recipe onto the list of all recipes
 
+  //saveRecipe();
 }
+
+// async function getPrivate() {
+//   const tokenStr = localStorage.getItem('token');
+//   try{
+//       const res = await axios({
+//           method: "get",
+//           url: "http://localhost:3003/private/recipes",
+//           headers: {Authorization: `Bearer ${tokenStr}`},
+//       });
+//       return res;
+//   } catch(error){
+//       alert(error);
+//   }
+// }
+
+
+
+// async function saveRecipe() {
+//   console.log("help");
+//   //event.preventDefault();
+//   const recipe = finalRecipe;
+//   //const id = await stringToHash(name);
+//   const tokenStr = localStorage.getItem('token');
+//   console.log(localStorage.getItem('token'));
+//   try {
+//       const res = await axios({
+//           method: 'post',
+//           url: "http://localhost:3003/private/recipes/" + id,
+//           //WHAT DOES THIS MEAN \/
+//           headers: {Authorization: `Bearer ${tokenStr}`},
+//           //'Access-Control-Allow-Origin': 'http://localhost:3004',
+//           // "type": "merge",
+//           data: {
+//                       uri: recipe.uri,
+//                       img: recipe.image,
+//                       label: recipe.label,
+//                       url: recipe.url,
+//                       cals: recipe.calories,
+//                       ingredients: recipe.ingredients,
+//                       dietLabel: recipe.dietLabels,
+//                       healthLabel: recipe.healthLabels
+//                   },
+//         withCredentials: true,
+//       });
+
+//       //MIGHT NOT NEED THIS - MIGHT BE HAPPENING IN QUIZ.JS
+//       //saveRecipeUser(id, name, ingredients, instructions);
+//       console.log("final recipe successfully stored");
+//   } catch (error) {
+//       alert(error);
+//   }
+// }
 
 export async function createRecipe(){
   // 5 most popular food types in the world sorted with moods happy, sad, angry, anxious, and excited
@@ -259,7 +314,7 @@ export async function createRecipe(){
                               </div>
                               <footer class="card-footer">
                                   <p class="card-footer-item">
-                                  <a href="profile.html"><button class="button" id="profileButton">Go to My Recipe</button></a>
+                                  <a href="profile.html"><button class="button profileButton" id="profileButton">Go to My Recipe</button></a>
                                   </p>
                               </footer>
                           </div>
@@ -285,6 +340,79 @@ export async function createRecipe(){
 
 // }
 
+async function addRecipe(event){
+
+  let id = finalRecipe.recipe.label;
+  // id = id.split().join();
+  console.log(id);
+
+  let recipe = finalRecipe.recipe;
+
+    let token = localStorage.getItem('jwt');
+    try {
+        const res = await axios({
+            method: 'post',
+            url: "http://localhost:3003/private/recipes/" + id,
+            headers: {Authorization: `Bearer ${token}`},
+            "type": "merge",
+            'data': {
+              'data': { 
+                'uri': recipe.uri,
+                'img': recipe.image,
+                'label': recipe.label,
+                'url': recipe.url,
+                'cals': recipe.calories,
+                'ingredients': recipe.ingredients,
+                'dietLabel': recipe.dietLabels,
+                'healthLabel': recipe.healthLabels,
+              }
+            }
+        });
+        //console.log(res);
+        addUser(id);
+    } catch (error) {
+        alert(error);
+    }
+}
+// async function stringToHash(string) {        
+//   var hash = 0; 
+//   if (string.length == 0) return hash; 
+//   for (let i = 0; i < string.length; i++) { 
+//       let char = string.charCodeAt(i); 
+//       hash = ((hash << 5) - hash) + char; 
+//       hash = hash & hash; 
+//   } 
+//   return hash; 
+// } 
+
+async function addUser(id){
+
+  let recipe = finalRecipe.recipe;
+
+  let token = localStorage.getItem('jwt');
+  try {
+    const res = await axios({
+        method: 'post',
+        url: "http://localhost:3003/user/recipes/" + id,
+        headers: {Authorization: `Bearer ${token}`},
+        "type": "merge",
+        'data': {
+            'data': {
+              "uri": recipe.uri,
+              "img": recipe.image,
+              "label": recipe.label,
+              "url": recipe.url,
+              "cals": recipe.calories,
+              "ingredients": recipe.ingredients,
+              "dietLabel": recipe.dietLabels,
+              "healthLabel": recipe.healthLabels,
+            }
+        }
+    });
+  } catch (error) {
+      alert(error);
+  }
+}
 
 export function renderQuiz(){
   let quiz = $('#root');
@@ -293,9 +421,14 @@ export function renderQuiz(){
  
   quiz.on('click', '.answer', handleAnswerButton);
 
+  quiz.on('click', '.profileButton', addRecipe);
+
  // quiz.on('click', '.profileButton', handleProfileButton);
 }
 
 $(function() {
     renderQuiz();
 });
+
+export default allRecipes;
+

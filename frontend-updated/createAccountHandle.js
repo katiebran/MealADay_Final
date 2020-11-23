@@ -14,10 +14,10 @@ async function handleLogIn() {
             }
         })
         const token = res.data.jwt;
-        localStorage.setItem('token', token);
+        localStorage.setItem('jwt', token);
         console.log(token);
         localStorage.setItem('name', username);
-        window.location.replace('http://localhost:3002/quiz.html'); 
+        window.location.replace('http://localhost:3004/quiz.html'); 
         return true;
     } catch (error) {
         alert(error);
@@ -33,20 +33,20 @@ async function createUser() {
     try {
         const res = await axios({
             method: "post",
-            url: 'http://localhost:3002/account/create',
+            url: 'http://localhost:3003/account/create',
             data: {
                 name: username,
                 pass: password,
             }
         })
-        window.location.replace('http://localhost:3002/logIn.html');
+        window.location.replace('http://localhost:3004/logIn.html');
     } catch (error){
         alert(error + ": An account with this name already exists!");
     }
 }
 
 function logOut() {
-    localStorage.removeItem('token');
+    localStorage.removeItem('jwt');
     localStorage.removeItem('name');
-    window.location.replace('http://localhost:3002/index.html');
+    window.location.replace('http://localhost:3003/index.html');
 }

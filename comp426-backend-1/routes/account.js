@@ -11,6 +11,14 @@ const saltRounds = 10;
 
 const {accountStore} = require('../data/DataStore');
 
+//const cors = require('cors');
+
+// var corsOptions = {
+//   origin: 'http://localhost:3004',
+//   credentials: true
+// }
+// router.use(cors(corsOptions));
+
 
 /**
  * This route requires a valid JWT token.
@@ -59,6 +67,8 @@ router.post('/login', async function (req, res) {
   }, process.env.SECRET_KEY, {expiresIn: '30d'});
 
   res.send({jwt: token, data: userData, name});
+
+  return;
 });
 
 /**

@@ -11,7 +11,10 @@
     <script src="https://kit.fontawesome.com/3e0c7ee1b1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="node_modules/hover.css/css/hover.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="profile.js" type="modal"></script>
+    <script src="node_modules/axios/dist/axios.js"></script>
+    <script src="testdata.js"></script>
+    <script src="quiz.js" type="module"></script>
+    <script src="profile.js" type="module"></script>
     <link rel="icon" href="images/favicon.png">
     <title>Meal-A-Day: Profile</title>
 </head>
@@ -36,14 +39,6 @@
         <div class="navbar-end"></div>
         <div class="navbar-item">
             <div class="buttons">
-              <script>
-                  if(localStorage.getItem('token') != null){
-                    console.log(localStorage.getItem('token'));
-                    document.write(`<a class="button is-dark " href="./logOut.html">
-                                      <strong>Log Out</strong>
-                                    </a>`);
-                }
-              </script>
             </div>
           </div>
     </nav>
