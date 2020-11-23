@@ -9,7 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
     "axios": "^0.21.0",
+    "bulma": "^0.9.1",
     "jquery": "^3.5.1"
   }
 }
