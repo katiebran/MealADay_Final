@@ -1,4 +1,4 @@
-var questions = [{
+export var questions = [{
     q: "What type of food are you craving right now?",
     a: [
       "Spicy Mexican Tacos",

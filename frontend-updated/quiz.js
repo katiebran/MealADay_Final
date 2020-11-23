@@ -1,3 +1,5 @@
+import {questions} from './testdata.js'
+
 //global mood counters
 var happyPoints = 0;
 var sadPoints = 0;
@@ -5,13 +7,15 @@ var angryPoints = 0;
 var excitedPoints = 0;
 var questionCount = 0;
 var tempCounter = 0;
-let finalRecipe;
+var finalRecipe;
+// let allRecipes;
+
 
 let success = false;
 
-
 // global array --- somehow make this a secret value ??
-let allRecipes = [];
+
+
 
 var tempData = copyData(questions);
 
@@ -181,7 +185,11 @@ export async function findFinalRecipe(foodObjArr){
 
   console.log(finalFoodType);
 
-  finalRecipe = finalFoodType[randomNumber2];                               // gives the final random recipe for your mood
+  finalRecipe = finalFoodType[randomNumber2];         // gives the final random recipe for your mood
+
+
+  // allRecipes.push(finalRecipe);
+  
 
   //allRecipes.push(finalRecipe);                                                       // pushes the recipe onto the list of all recipes
 

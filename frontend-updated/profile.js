@@ -35,19 +35,24 @@
 //     //will have to write a code to only get one label
 // }
 
+// import {finalRecipe} from './quiz.js';
+// import allRecipes from './quiz.js';
+
+
 async function pushRecipe() {
     
     const token = localStorage.getItem('token');
     try{
         const res = await axios({
             method: "get",
-            url: "http://localhost:3000/private/recipes",
+            url: "http://localhost:3000/private",
             headers: {Authorization: `Bearer ${token}`},
         });
         return res;
     } catch(error){
         alert(error);
     }
+    console.log('push')
 }
 
 
@@ -55,32 +60,37 @@ async function pushRecipe() {
 // CHANGE THIS!!!!
 async function saveRecipe(event) {
     event.preventDefault();
-    const recipeID = event.target.id;
-    let obj = await getRecipe(recipeID);
-    let name = obj.name;
-    const id = await stringToHash(name);
-    const ingredients = obj.ingredients;
-    const instructions = obj.instructions;
+
+    const recipe = finalRecipe;
+    //const id = await stringToHash(name);
     const tokenStr = localStorage.getItem('jwt');
     try {
         const res = await axios({
             method: 'post',
-            url: "http://localhost:3000/private/recipes/" + id,
+            url: "http://localhost:3000/private",
             //WHAT DOES THIS MEAN \/
             headers: {Authorization: `Bearer ${tokenStr}`},
             "type": "merge",
             'data': {
-                'data': {
                     // "hah": "hah"
-                        'name': name,
-                        'ingredients': ingredients,
-                        'instructions': instructions,
-                }
-            }
+                        uri: recipe.uri,
+                        img: recipe.image,
+                        label: recipe.label,
+                        //createdAt: 'date',
+                        url: recipe.url,
+                        cals: recipe.calories,
+                        ingredients: recipe.ingredients,
+                        //dishType: dishLabels,
+                        dietLabel: recipe.dietLabels,
+                        healthLabel: recipe.healthLabels
+                    }
         });
 
+        console.log(res);
+
         //MIGHT NOT NEED THIS - MIGHT BE HAPPENING IN QUIZ.JS
-        saveRecipeUser(id, name, ingredients, instructions);
+        //saveRecipeUser(id, name, ingredients, instructions);
+        console.log("final recipe successfully stored");
     } catch (error) {
         alert(error);
     }
@@ -163,20 +173,22 @@ function handleDeleteButton(event){
 $(function () {
    /* /for (let i = 0; i < 6; i++) {
         let currCard = renderRecipeCard(recipe);
-
         // this is added so we can add them to be in a grid formation
         if (i % 2 == 0) {
             $('.cardRootOdd').append(currCard);
         } else {
             $('.cardRootEven').append(currCard);
         }
-
     }
     */
-   pushRecipe();
-   renderRecipeCard(recipe);
-    $(document).on('click', '.edit', handleEditButton);
-    $(document).on('click', '.delete', handleDeleteButton);
+    
+    console.log(finalRecipe)
+//    pushRecipe();
+//     // console.log(allRecipes)
+// //    if(finalRecipe)
+//    renderRecipeCard(recipe);
+//     $(document).on('click', '.edit', handleEditButton);
+//     $(document).on('click', '.delete', handleDeleteButton);
 });
 /*
 $(document).on('click', '.delete', async (e) => {
@@ -185,14 +197,10 @@ $(document).on('click', '.delete', async (e) => {
     //gets the specific recipe id
     let curr = getID(currBtn);
     //now curr equals the specific recipe object that you are trying to delete
-
     /* TODO: 
     delete that recipe from the back end
     remove from front end with .remove() 
-
-
     console.log(curr)
-
 });
 */
 
