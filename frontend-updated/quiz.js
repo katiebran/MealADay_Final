@@ -270,7 +270,7 @@ export async function createRecipe(){
   
       $('#entirePage').replaceWith(popUp); 
     }
-  }, 1500);
+  }, 1000);
 
 }
 
