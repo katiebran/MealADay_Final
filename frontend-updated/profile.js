@@ -58,9 +58,12 @@ function renderRecipeCard(recipe) {
                         </div>
              `;
 
-        $('.cardRoot').append(card);
+        $('.cardRoot').prepend(card);
     
 }
+
+
+
 
 function handleEditButton(event) {
     event.preventDefault();
@@ -108,7 +111,9 @@ async function getRecipes() {
 
 $(function () {
     getRecipes();
-    // $(document).on('click', '.edit', handleEditButton);
+    $(document).on('click', '.edit', function(){
+        console.log('edit')
+    });
     // $(document).on('click', '.delete', handleDeleteButton);
 });
 
@@ -127,3 +132,9 @@ function getRandomLabel(labelArr) {
 }
 
 
+function getDate(){
+    var d = new Date();
+    let month = d.getMonth() + 1;
+    let day = d.getDay() + 1;
+    return (month + '/' + day)
+}

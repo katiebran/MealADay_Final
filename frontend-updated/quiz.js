@@ -388,7 +388,8 @@ async function addRecipe(event){
 async function addUser(id){
 
   let recipe = finalRecipe.recipe;
-
+  let date = getDate();
+  console.log(date)
   let token = localStorage.getItem('jwt');
   try {
     const res = await axios({
@@ -406,6 +407,7 @@ async function addUser(id){
               "ingredients": recipe.ingredients,
               "dietLabel": recipe.dietLabels,
               "healthLabel": recipe.healthLabels,
+              "date": date,
             }
         }
     });
@@ -429,6 +431,16 @@ export function renderQuiz(){
 $(function() {
     renderQuiz();
 });
+
+
+
+function getDate(){
+  var d = new Date();
+  let month = d.getMonth() + 1;
+  let day = d.getDay() + 1;
+  return (month + '/' + day)
+}
+
 
 export default allRecipes;
 
