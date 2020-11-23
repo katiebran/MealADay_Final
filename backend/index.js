@@ -13,20 +13,22 @@ const expressSession = require('express-session');
 let cors = require('cors');
 
 const corsConfi = {
-  origin: "http://localhost:3000", //LOCAL
+  origin: "http://localhost:3001", //LOCAL
   //origin: "http://localhost:3000", //HEROKU
   credentials: true
 }
 app.use(cors(corsConfi));
 
-
+app.enable('trust proxy')
 app.use(expressSession({
     name: "kmpSessionCookie",
     secret: "express session secret",
     resave: false,
     saveUninitialized: false,
+    proxy: true,
     cookie: {
-        //   secure: true, 
+          secure: true, 
+          sameSite: 'none',
           maxAge: 5184000000
     }
 }));
@@ -41,6 +43,11 @@ app.listen(port, () => {
 const Secret = require("./Secret.js");
 
 const login_data = require('data-store')({path: process.cwd() + '/data/users.json'});
+
+
+app.get('/hello', (req, res) => {
+    res.json({hello: 'res'})
+})
 
 app.post('/createUser', (req, res) =>{
     let user = req.body.user;
