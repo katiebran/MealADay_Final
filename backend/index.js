@@ -35,17 +35,18 @@ app.use(expressSession({
 
 const Secret = require("./Secret.js");
 
-const login_data = require('data-store')({path: process.cwd() + '/data/users.json'});
+const login_data = require('data-store')({path: process.cwd() + '/Data/users.json'});
 
 
-app.get('/hello', (req, res) => {
-    res.json({l:"v"})
-})
+// app.get('/hello', (req, res) => {
+//     res.json({l:"v"})
+// })
+
 app.post('/createUser', (req, res) =>{
-    let user = req.body.user;
+    let name = req.body.name;
     let data = req.body
-    if (login_data.get(user) == null){
-      login_data.set(user, data);
+    if (login_data.get(name) == null){
+      login_data.set(name, data);
       res.json(true);
       return;
     }else{
@@ -76,8 +77,11 @@ app.post('/login', (req, res) => {
     let user = req.body.user;
     let password = req.body.password;
 
+    console.log("hello")
     //check 
+    //console.log(login_data.get(user));
     let user_data = login_data.get(user);
+   // console.log(user_data);
     if(user_data == null) {
         res.status(404).send("Not found");
         return;
@@ -138,7 +142,7 @@ app.post('/secret', (req, res) => {
 
     let s = Secret.create(req.session.user, req.body.secret);
     if(s == null) {
-        res.status(400).send("Bad Request");
+        res.status(400).send("Bad Request!");
         return;
     }
 

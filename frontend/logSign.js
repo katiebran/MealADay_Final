@@ -6,13 +6,15 @@ $(function () {
         let password = $("#rtrnPass").val();
         console.log(username, password)
 
-        let res = await axios.post('http://localhost:3000/login', {
+            let res = await axios.post('http://localhost:3000/login', {
             withCredentials: true,
-            data: {
-                user: username,
-                password: password
-            }
-        });
+                data: {
+                    user: username,
+                    password: password,
+                }
+            });
+
+        
 
         console.log(res);
         // .then((response) => {
@@ -50,17 +52,16 @@ $(function () {
             alert("Passwords do not match, try again!");
             return;
         } else {
-            const result = await axios({
-                method: 'post',
-                url: 'http://localhost:3000/createUser', //LOCAL
+            let res = await axios.post('http://localhost:3000/createUser',{
+                withCredentials:true,
                 data: {
-                    username: `${username}`,
-                    name: `${name}`,
-                    password: `${password1}`
-                },
-                withCredentials: true
+                    username: username,
+                    name: name,
+                    password1: password1,
+                    password2: password2,
+                }
             });
-            console.log(results.data);
+            console.log(res.data);
         }
     })
 });
