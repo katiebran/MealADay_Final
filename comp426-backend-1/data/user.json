@@ -105,6 +105,82 @@
           "Tree-Nut-Free",
           "Alcohol-Free"
         ]
+      },
+      "Italian Sliders": {
+        "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_4f10c3526950326e303bfe589b016515",
+        "img": "https://www.edamam.com/web-img/6d7/6d7a902b56c6fa291f4d8da5646d6fb4.jpg",
+        "label": "Italian Sliders",
+        "url": "http://www.food52.com/recipes/5104_italian_sliders",
+        "cals": 6092.505084900001,
+        "ingredients": [
+          {
+            "text": "1 1/2 pound ground beef",
+            "weight": 680.388555,
+            "image": "https://www.edamam.com/food-img/cfa/cfae8f9276eaf8f0d9349ba662744a0c.jpg"
+          },
+          {
+            "text": "1 pound hot Italian sausage",
+            "weight": 453.59237,
+            "image": "https://www.edamam.com/food-img/caf/cafaac36e1482d9bec67dd39393b5d12.jpg"
+          },
+          {
+            "text": "1 teaspoon Italian seasoning",
+            "weight": 1,
+            "image": "https://www.edamam.com/food-img/89b/89b37a04e46e052671d73addcb84aa51.jpg"
+          },
+          {
+            "text": "1 medium onion chopped finely",
+            "weight": 110,
+            "image": "https://www.edamam.com/food-img/205/205e6bf2399b85d34741892ef91cc603.jpg"
+          },
+          {
+            "text": "1 bell pepper chopped finely",
+            "weight": 119,
+            "image": "https://www.edamam.com/food-img/4dc/4dc48b1a506d334b4ab6671b9d56a18f.jpeg"
+          },
+          {
+            "text": "2 cloves minced garlic",
+            "weight": 6,
+            "image": "https://www.edamam.com/food-img/6ee/6ee142951f48aaf94f4312409f8d133d.jpg"
+          },
+          {
+            "text": "18 Dinner rolls (freshly baked best)",
+            "weight": 504,
+            "image": "https://www.edamam.com/food-img/608/6083ff46b1479341352f3fde8d1c9948.jpg"
+          },
+          {
+            "text": "8 ounces fresh Mozzarella sliced 1/4 inch thick",
+            "weight": 226.796185,
+            "image": "https://www.edamam.com/food-img/03e/03ec3a4d46bec5634dc8a352804e4e68.jpg"
+          },
+          {
+            "text": "4 large Roma tomatoes sliced 1/4 thick",
+            "weight": 310,
+            "image": "https://www.edamam.com/food-img/23e/23e727a14f1035bdc2733bb0477efbd2.jpg"
+          },
+          {
+            "text": "1/2 cup fresh large basil leaves",
+            "weight": 15,
+            "image": "https://www.edamam.com/food-img/5f1/5f1b05685ac2b404236a5d1c1f3c8c10.jpg"
+          },
+          {
+            "text": "3 tablespoons extra virgin olive oil",
+            "weight": 40.5,
+            "image": null
+          },
+          {
+            "text": "3 tablespoons balsamic vinegar",
+            "weight": 48,
+            "image": "https://www.edamam.com/food-img/90a/90a1f211768e166ecfff19e8b4747498.jpg"
+          }
+        ],
+        "dietLabel": [],
+        "healthLabel": [
+          "Sugar-Conscious",
+          "Peanut-Free",
+          "Tree-Nut-Free",
+          "Alcohol-Free"
+        ]
       }
     }
   }

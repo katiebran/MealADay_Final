@@ -365,6 +365,7 @@ async function addRecipe(event){
                 'ingredients': recipe.ingredients,
                 'dietLabel': recipe.dietLabels,
                 'healthLabel': recipe.healthLabels,
+                
               }
             }
         });

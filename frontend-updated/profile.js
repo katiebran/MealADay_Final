@@ -30,7 +30,7 @@ function renderRecipeCard(recipe) {
 
   
         let card = `
-                    <div class="box" id="${recipe.uri}">
+                    <div class="box" id="${recipe.label}">
                     
                         <img class="recipe_img" src="${recipe.img}">
                             <article class="media">
@@ -50,8 +50,8 @@ function renderRecipeCard(recipe) {
                                 
                             </div>
                             <div class="tags">
-                            <button id="${recipe.id}" class=" button deleteCard m-1 is-small is-danger">Delete <i class="ml-1 far fa-trash-alt"></i></button>
-                            <button id="${recipe.id}"  class="button edit is-info m-1 is-small">Edit <i class="ml-1 fas fa-edit"></i></button>
+                            <button id="${recipe.label}" class=" button deleteCard m-1 is-small is-danger">Delete <i class="ml-1 far fa-trash-alt"></i></button>
+                            <button id="${recipe.label}"  class="button edit is-info m-1 is-small">Edit <i class="ml-1 fas fa-edit"></i></button>
                             </div>
                             
                             
@@ -75,8 +75,8 @@ function handleEditButton(event) {
 function handleDeleteButton(event) {
     event.preventDefault();
     //insert axios call
-
-    $('#' + event.target.id).replaceWith(``);
+    console.log(event.target);
+    $('#' + event.target).replaceWith(``);
 
 
 }
@@ -108,8 +108,8 @@ async function getRecipes() {
 
 $(function () {
     getRecipes();
-    // $(document).on('click', '.edit', handleEditButton);
-    // $(document).on('click', '.delete', handleDeleteButton);
+    $(document).on('click', '.edit', handleEditButton);
+    $(document).on('click', '.deleteCard', handleDeleteButton);
 });
 
 
