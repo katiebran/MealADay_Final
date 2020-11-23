@@ -4,22 +4,25 @@ $(function () {
         event.preventDefault();
         let username = $("#rtrnUsername").val();
         let password = $("#rtrnPass").val();
-        await axios({
-            method: 'post',
-            url: 'http://localhost:3000/login', //LOCAL
+        console.log(username, password)
+
+        let res = await axios.post('http://localhost:3000/login', {
+            withCredentials: true,
             data: {
-                user: `${username}`,
-                password: `${password}`
-            },
-            withCredentials: true
-        }).then((response) => {
-            $("#messages").append('<br><p class="has-text-danger">SUCCESS!<p>');
-            location.href = "./profile.html";
-            console.log(response)
-        }).catch((e) => {
-            $("#messages").append('<br><p class="has-text-danger">Username or password incorrect. Try again!<p>');
-            console.log(e)
+                user: username,
+                password: password
+            }
         });
+
+        console.log(res);
+        // .then((response) => {
+        //     $("#messages").append('<br><p class="has-text-danger">SUCCESS!<p>');
+        //     location.href = "./profile.html";
+        //     console.log(response)
+        // }).catch((e) => {
+        //     $("#messages").append('<br><p class="has-text-danger">Username or password incorrect. Try again!<p>');
+        //     console.log(e)
+        // });
 
 
         // ) catch(e){

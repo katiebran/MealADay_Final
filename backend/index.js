@@ -13,7 +13,7 @@ const expressSession = require('express-session');
 let cors = require('cors');
 
 const corsConfi = {
-  origin: "http://localhost:3000", //LOCAL
+  origin: "http://localhost:3001", //LOCAL
   //origin: "http://localhost:3000", //HEROKU
   credentials: true
 }
@@ -31,17 +31,16 @@ app.use(expressSession({
     }
 }));
 
-app.listen(port, () => {
-    // console.log("User Login Example up and running on port " + port);
-  console.log(`Example app listening at http://localhost:${port}`)
-})
-
 
 
 const Secret = require("./Secret.js");
 
 const login_data = require('data-store')({path: process.cwd() + '/data/users.json'});
 
+
+app.get('/hello', (req, res) => {
+    res.json({l:"v"})
+})
 app.post('/createUser', (req, res) =>{
     let user = req.body.user;
     let data = req.body
@@ -188,3 +187,7 @@ app.delete('/secret/:id', (req, res) => {
      res.json(true);
 });
 
+app.listen(port, () => {
+    // console.log("User Login Example up and running on port " + port);
+  console.log(`Example app listening at http://localhost:${port}`)
+})
