@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="node_modules/bulma/css/bulma.css" />
+    <link rel="stylesheet" href="styles.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3e0c7ee1b1.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="images/favicon.png">
+    <title>Meal-A-Day: Log In</title>
+</head>
+<body>
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item logo"  href="./index.html"></a>
+          <div class="navbar-burger" data-target="navMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="navbar-menu" id="navMenu">
+          <div class="navbar-start">
+            <a href="./index.html" class="navbar-item brackets">Home</a>
+          </div>
+        </div>
+      </nav>
+
+
+      <div class = "SignLog_banner banner">
+        <div id= "SignLog_cont">
+          <div class="login-card">
+            <div class="card-tittle">
+              <h1 class="title">Log In</h1>
+            </div>
+          </div>
+
+            <!-- id= rtrnUsername  -->
+            <div class="field">
+                <div class="control has-icons-left has-icons-right">
+                  <input id="rtrnUsername" class="input" type="text" placeholder="Username" required autofocus>
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-user"></i>
+                  </span>
+                  <span class="icon is-small is-right">
+                    <i class="fas fa-check"></i>
+                  </span>
+                </div>
+              </div>
+
+              <!-- id = rtrnPass -->
+              <div class="field">
+                <div class="control has-icons-left"></p>
+                  <input id="rtrnPass" class="input" type="text" placeholder="Password" required>
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-lock"></i>
+                  </span>
+                </div>
+              </div>
+
+              <!-- id = submitRtrnAccount -->
+              <div class="field">
+                <div class="control">
+                  <button id="submitRtrnAccount"class="button yellow_button">
+                    Log In
+                  </button>
+                </div>
+              </div>
+              <div class="field">
+                  <span style="color: grey;">Don't have an Account? Click here to 
+                      <a href="./signUp.html">Sign Up</a>
+                  </span>
+              </div>
+        </div>
+        <div id="messages"></div>
+      </div>
+
+
+    
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+          <p>
+            <strong>Meal-A-Day.</strong> by <a>MJ Gomez Saavedra, Erin Callahan, Annie Rudisill, and Katie Brandao</a>.
+          </p>
+        </div>
+    </footer>
+
+     <!-- Include links to JavaScript files below -->
+     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+     <script src="node_modules/axios/dist/axios.js"></script>
+     <script src="logSign.js"></script>
+
+
+</body>
+</html>
