@@ -22,7 +22,8 @@ nav {
 }
 
 .is_flex_wrap {
-  display: flex;
+  display: flex !important;
+
   flex-wrap: wrap-reverse;
 
 }
@@ -151,8 +152,6 @@ nav {
 .profile-pic {
   border-radius: 50%;
   margin: 10px auto;
-  
-
   width: 100px;
   background-image: url('images/person.jpg');
   height: 100px;
@@ -172,6 +171,7 @@ nav {
 
 .cardRoot .box {
   width: 400px;
+ 
 }
 
 /* LOGIN/SIGNUP */

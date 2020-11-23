@@ -1,42 +1,8 @@
-import { data } from 'jquery';
-// let risotto = {
-//     id: 'risotto',
-//     quantity: '10 oz',
-// }
-
-// let cheese = {
-//     id: 'parm',
-//     quantity: '2 oz',
-// }
-
-// let squash = {
-//     id: 'butternut squash',
-//     quantity: '1',
-// }
-
-// let dishLabels = ['label1', 'label2', 'label3', 'label4', 'label5']
-// let dietLabels = ['label1', 'label2', 'label3', 'label4', 'label5']
-// let healthLabels = ['label1', 'label2', 'label3', 'label4', 'label5']
+// import { data } from 'jquery';
+// import $ from '/js/libs/jquery/dist/jquery.js';
 
 
-
-// var recipe = {
-//     id: 1,
-//     img: 'images/test.jpg',
-//     label: 'butternut squash risotto',
-//     createdAt: 'date',
-//     url: '#',
-//     cals: 123,
-//     ingredients: [
-//         risotto, cheese, squash
-//     ],
-//     dishType: dishLabels,
-//     dietLabel: dietLabels,
-//     healthLabel: healthLabels
-//     //will have to write a code to only get one label
-// }
-
-import allRecipes from './quiz.js';
+// import allRecipes from './quiz.js';
 
 
 
@@ -46,9 +12,13 @@ function renderRecipeCard(recipe) {
     let list = `<ul>`;
 
     for (let i = 0; i < recipe.length; i++) {
-        list += `<li>${recipe.ingredients[i].id} - ${recipe.ingredients[i].quantity}</li>`
+        list += `<li>${recipe.ingredients[i].id} - ${recipe.ingredients[i].quantity}</li>`;
+        console.log(list)
     };
     list += `</ul>`;
+
+
+    console.log(list)
 
     // let dishType = getRandomLabel(recipe.dishType);
     // let dietLabel = getRandomLabel(recipe.dietLabel);
@@ -56,10 +26,10 @@ function renderRecipeCard(recipe) {
 
 
 
-    console.log(dishType)
+    // console.log(dishType)
 
   
-        let card = `<div class= "column is-half">
+        let card = `
                     <div class="box" id="${recipe.uri}">
                     
                         <img class="recipe_img" src="${recipe.img}">
@@ -80,13 +50,13 @@ function renderRecipeCard(recipe) {
                                 
                             </div>
                             <div class="tags">
-                            <button id="${recipe.id}" class="delete" class="button m-1 is-small is-danger">Delete <i class="ml-1 far fa-trash-alt"></i></button>
-                            <button id="${recipe.id}" class ="edit" class="button is-info m-1 is-small">Edit <i class="ml-1 fas fa-edit"></i></button>
+                            <button id="${recipe.id}" class=" button deleteCard m-1 is-small is-danger">Delete <i class="ml-1 far fa-trash-alt"></i></button>
+                            <button id="${recipe.id}"  class="button edit is-info m-1 is-small">Edit <i class="ml-1 fas fa-edit"></i></button>
                             </div>
                             
                             
                         </div>
-                </div>`;
+             `;
 
         $('.cardRoot').append(card);
     
@@ -120,10 +90,9 @@ async function getRecipes() {
             headers: { Authorization: `Bearer ${token}` },
             "type": "merge",
         });
-        console.log(recipe);
-        console.log(recipe.data.recipeult);
-
-        let dataArr = Object.values(recipe.data.recipeult);
+        console.log(recipe.data);
+        console.log(recipe.data.result);
+        let dataArr = Object.values(recipe.data.result);
         console.log(dataArr);
 
         for(let i=0; i< dataArr.length; i++){
