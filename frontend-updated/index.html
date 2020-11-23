@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="node_modules/bulma/css/bulma.css" />
+    <link rel="stylesheet" href="styles.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3e0c7ee1b1.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="node_modules/hover.css/css/hover.css">
+    <title>Meal-A-Day: Home</title>
+</head>
+<body>
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand"> 
+          <a class="navbar-item logo"  href="#home_banner"></a>
+          <div class="navbar-burger" data-target="navMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="navbar-menu" id="navMenu">
+          <div class="navbar-start">
+            <a href="#home_banner" class="navbar-item brackets">Home</a>
+            <a href="#about_banner" class="navbar-item brackets">About</a>
+
+            <!-- if someone is logged in -->
+            <!-- Can't take quiz or view playlist until user is signed in-->
+            <script>
+              //console.log(localStorage.getItem('token'));
+              if(localStorage.getItem('token') != null){
+                document.write(`<a href="./quiz.html" class="navbar-item brackets">Take Quiz</a>`);
+              }
+            </script>
+          </div>
+        </div>
+        <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="buttons">
+                <script>
+                  if(localStorage.getItem('token') == null){
+                    document.write(`<a class="button is-dark " href="./signUp.html">
+                                      <strong>Sign up</strong>
+                                    </a>
+                                    <a class="button is-light" href="./logIn.html">
+                                      <strong>Log in</strong>
+                                    </a>`);
+                  }
+                </script>
+                <script>
+                    if(localStorage.getItem('token') != null){
+                      document.write(`<a class="button is-dark " href="./logOut.html">
+                                        <strong>Log Out</strong>
+                                      </a>`);
+                    }
+                </script>
+              </div>
+            </div>
+          </div>
+      </nav>
+
+    <section class="hero is-fullheight banner" id="home_banner">
+        <div class="hero-body is_flex_wrap margin-auto center">
+            <div class="container">
+                <h1 class="title" id=logo_font>
+                    Meal-A-Day.
+                </h1><br>
+                <h2 class="subtitle">
+                    Because you don't always feel the same way 
+                    <br> 
+                    and neither should your recipes.
+                    <br><br>
+                    Sign Up, Take the Quiz.
+                </h2>
+
+                <!-- Note: add href to quiz here -->
+                <script>
+                  if(localStorage.getItem('token') != null){
+                    document.write(`<a href="./quiz.html"><button class="hvr-push yellow_button"> 
+                                        Take Our Quiz
+                                    </button></a>`);
+                  }
+                </script>
+                <script>
+                  if(localStorage.getItem('token') == null){
+                    document.write(`<a href="./signUp.html"><button class="hvr-push yellow_button"> 
+                                      Sign Up
+                                  </button></a>
+                                  <a href="./signUp.html"><button class="hvr-push yellow_button"> 
+                                      Log In
+                                  </button></a>`);
+                  }
+                </script>
+            </div>
+            <div id="hero_img"></div>
+        </div>
+    </section>
+
+    <section class="hero is-fullheight is-white banner p-5" id="about_banner">
+        <div class="container extra-margin">
+            <div class="content"> 
+                <br>
+                <h1 class="title is-family-secondary">Getting Started</h1>
+                <h5 class="subtitle has-text-grey is-italic">Familiarize yourself with Meal-A-Day.</h5>
+            </div>
+            <div class="columns">
+                <div class="column m-2">
+                    <h1 class="title">Sign up</h1>
+                    <h5 class="subtitle has-text-grey">Join our community</h5>
+                    <p>With access the Edamam API, Meal-A-Day chooses a personalized recipe to meet all your moods. Start by following the steps on how to create a profile.
+                    </p>
+                    <br>
+                    <p>Your palate is unique to you. Maybe you're pasta-fanatic or a salad superfan, either 
+                        way let us create a recipe just for you. </p>
+                    
+                </div>
+                <div class="column  m-2">
+                    <h1 class="title">Take our quiz</h1>
+                    <h5 class="subtitle has-text-grey">Let us know your taste</h5>
+                    <p>Now that your profile is ready, it's time for you to tell us what you like by taking our quiz.  
+                    </p>
+                    <br>
+                    <p>
+                        Meal-A-Day's quiz will essentially find out what mood you're in and craft a recipe just for YOU.
+                    </p>
+
+                   
+
+                </div>
+                <div class="column m-2">
+                    <h1 class="title">Tailored to you </h1>
+                    <h5 class="subtitle has-text-grey">Eat what fits your mood</h5>
+                    <p>Meal-A-Day's crafty algorithm figures out what mood you're in and gives you a recipe for it. All these recipes are easily accessible in your profile. 
+                    </p>
+                    <br>
+                    <p>
+                        What are you waiting for? Get ready to get your perfect meal!</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+          <p>
+            <strong>Meal-A-Day.</strong> by <a>MJ Gomez Saavedra, Erin Callahan, Annie Rudisill, and Katie Brandao</a>.
+          </p>
+        </div>
+      </footer>
+
+</body>
+</html>
