@@ -1,0 +1,22 @@
+{
+  "users": {
+    "123": {
+      "passwordHash": "$2a$10$0YfYJykQxdVk4s.uzkd0Le8L.8aJwFvzN.mEIt8QOXtOFErxA3y8W"
+    },
+    "yeah": {
+      "passwordHash": "$2a$10$ReJTVbBf9Xa4/yHQjZ5/5uiSypDZDmGglFu5CI7RackN1zY410N6e"
+    },
+    "erin": {
+      "passwordHash": "$2a$10$hz/hfwburPdM/ExMjYD3mO7SxZEoGJyd77roEAUBGlUsmN3zyqX1."
+    },
+    "ermarie": {
+      "passwordHash": "$2a$10$nTmfCnAY/GLsKA4yoD9pnOvvGNjuYnAsaY3zCvtj7JsKQMT.lMILi"
+    },
+    "erin2": {
+      "passwordHash": "$2a$10$q5AN7Ox/gierzNhHMi6Dee8Po9rPpyl58.NZFzROxzysnM0uQADNO"
+    },
+    "rich": {
+      "passwordHash": "$2a$10$RxnJiLrAXo9V7YqDT46BpOtbW3tvdlhHC1OIh9rwReYBLWm9YIIZa"
+    }
+  }
+}
