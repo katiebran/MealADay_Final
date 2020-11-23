@@ -6,7 +6,7 @@ $(function () {
         let password = $("#rtrnPass").val();
         await axios({
             method: 'post',
-            url: '../login', //LOCAL
+            url: 'http://localhost:3000/login', //LOCAL
             data: {
                 user: `${username}`,
                 password: `${password}`
