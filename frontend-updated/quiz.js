@@ -26,7 +26,6 @@ export function copyData(questions){
 export const handleAnswerButton = function(event){
   event.preventDefault();
 
-  //console.log(event.target);
 
     // PROBLEM HERE -- if you click on the words, it doesn't return the correct html element
   let tracker = event.target.getAttribute('id');
@@ -99,18 +98,6 @@ export const renderQuestion = function(){
     let deletedQuestion = tempData.splice(randomNumber,1);
     tempCounter++;
 
-
-    // PROBLEM HERE - how do we submit from the final question ??
-
-    
-    // if(questionCount == 7){
-    //     question += `<div>
-    //                 <a href="profile.html"><button class="submit" type="submit">Submit Answers!</button></a>
-    //                     </div>;
-    //                 </div>
-    //             </div>`;
-    // }
-
     return question;
   }
 }
@@ -178,18 +165,12 @@ async function findFinalRecipe(foodObjArr){
   let finalFoodType = foodObjArr[randomNumber].hits;                                 // gives the 10 recipes for that food type
 
   let randomNumber2 = Math.floor(Math.random() * Math.floor(finalFoodType.length));  // gives a random number to choose from the recipes
-  //console.log(randomNumber2);
-  //console.log(finalFoodType);
 
   finalRecipe = finalFoodType[randomNumber2]; 
   
   allRecipes.push(finalRecipe);
   console.log(allRecipes);
-  //finalRecipe = finalFoodType[randomNumber2].recipe;                               // gives the final random recipe for your mood
-  //console.log(finalRecipe);
-  //allRecipes.push(finalRecipe);                                                       // pushes the recipe onto the list of all recipes
-
-  //saveRecipe();
+  
 }
 
 // async function getPrivate() {
@@ -207,42 +188,6 @@ async function findFinalRecipe(foodObjArr){
 // }
 
 
-
-// async function saveRecipe() {
-//   console.log("help");
-//   //event.preventDefault();
-//   const recipe = finalRecipe;
-//   //const id = await stringToHash(name);
-//   const tokenStr = localStorage.getItem('token');
-//   console.log(localStorage.getItem('token'));
-//   try {
-//       const res = await axios({
-//           method: 'post',
-//           url: "http://localhost:3003/private/recipes/" + id,
-//           //WHAT DOES THIS MEAN \/
-//           headers: {Authorization: `Bearer ${tokenStr}`},
-//           //'Access-Control-Allow-Origin': 'http://localhost:3004',
-//           // "type": "merge",
-//           data: {
-//                       uri: recipe.uri,
-//                       img: recipe.image,
-//                       label: recipe.label,
-//                       url: recipe.url,
-//                       cals: recipe.calories,
-//                       ingredients: recipe.ingredients,
-//                       dietLabel: recipe.dietLabels,
-//                       healthLabel: recipe.healthLabels
-//                   },
-//         withCredentials: true,
-//       });
-
-//       //MIGHT NOT NEED THIS - MIGHT BE HAPPENING IN QUIZ.JS
-//       //saveRecipeUser(id, name, ingredients, instructions);
-//       console.log("final recipe successfully stored");
-//   } catch (error) {
-//       alert(error);
-//   }
-// }
 
 export async function createRecipe(){
   // 5 most popular food types in the world sorted with moods happy, sad, angry, anxious, and excited
@@ -330,15 +275,6 @@ export async function createRecipe(){
   }, 1000);
 
 }
-
-// export const handleProfileButton = function(event){
-//     event.preventDefault();
-
-//     console.log(5);
-
-//     window.location.replace(profile.html);
-
-// }
 
 async function addRecipe(event){
 
