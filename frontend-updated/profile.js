@@ -54,19 +54,17 @@ function handleEditButton(event) {
     let myList = `<ul>`;
 
     for (let i = 0; i < recipe.ingredients.length; i++) {
-        myList += `<li><input type="text" placeholder="${recipe.ingredients[i].text}"></li>`;
-        // console.log(list)
+        myList += `<li><input type="text" id="ing${i}" value="${recipe.ingredients[i].text}"></li>`;
+        
     };
     myList += `</ul>`;
     let editForm = `
-    <div class="box" id="${recipe.label.split(" ").join("")}">
+    <div class="box editForm" id="${recipe.id}">
     <img class="recipe_img" src="${recipe.img}">
-    <article class="media">
-                            
+    <article class="media">                
     <div class="field">
         <p>
-
-            <strong> <a href="${recipe.url}"><input class="input" type="text" placeholder="${recipe.label}"></input></a></strong>
+            <strong><input class="input nameField" type="text" value="${recipe.label}"></input></strong>
             <br>
             <small>${recipe.cals} cals</small>
             <br>
@@ -80,7 +78,7 @@ function handleEditButton(event) {
     
 </div>
 <div class="tags">
-<button id="${recipe.label.split(" ").join("")}" class=" button submitCard m-1 is-small is-warning">Submit <i class="fas fa-check"></i></button>
+<button id="${recipe.id}" class="button submit m-1 is-small is-warning">Submit <i class="fas fa-check"></i></button>
 </div>
 
 
@@ -89,6 +87,29 @@ function handleEditButton(event) {
     `
 
     $('#' + event.target.id).replaceWith(editForm);
+    if( $(".submit").on("click", handleEditFormSubmit));
+
+}
+
+
+function handleEditFormSubmit(event){
+    event.preventDefault();
+    console.log('submit pressed');
+    
+    let curr = event.target.id;
+    let recipe = dataArr.find(r => r.id = curr)
+    console.log(recipe)
+
+    recipe.label = $('.nameField').val();
+    for(let i = 0; i < recipe.ingredients.length; i++){
+        recipe.ingredients[i].text = $('#ing'+ i).val()
+    }
+
+    let newCard = renderRecipeCard(recipe);
+    $('.editForm').replaceWith(newCard)
+
+
+
 }
 
 function handleDeleteButton(event) {
