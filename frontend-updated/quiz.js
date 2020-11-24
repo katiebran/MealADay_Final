@@ -347,6 +347,8 @@ async function addRecipe(event){
   console.log(id);
 
   let recipe = finalRecipe.recipe;
+  let date = getDate();
+  let code = createID();
 
     let token = localStorage.getItem('jwt');
     try {
@@ -365,7 +367,7 @@ async function addRecipe(event){
                 'ingredients': recipe.ingredients,
                 'dietLabel': recipe.dietLabels,
                 'healthLabel': recipe.healthLabels,
-                
+                'id': code
               }
             }
         });
@@ -435,11 +437,9 @@ $(function() {
 
 
 
-function getDate(){
-  var d = new Date();
-  let month = d.getMonth() + 1;
-  let day = d.getDay() + 1;
-  return (month + '/' + day)
+
+function createID(){
+  return '_' + Math.random().toString(36).substr(2, 9);
 }
 
 

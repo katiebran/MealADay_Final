@@ -30,7 +30,7 @@ function renderRecipeCard(recipe) {
 
   
         let card = `
-                    <div class="box" id="${recipe.label}">
+                    <div class="box" id="${recipe.label.split(" ").join("")}">
                     
                         <img class="recipe_img" src="${recipe.img}">
                             <article class="media">
@@ -50,8 +50,8 @@ function renderRecipeCard(recipe) {
                                 
                             </div>
                             <div class="tags">
-                            <button id="${recipe.label}" class=" button deleteCard m-1 is-small is-danger">Delete <i class="ml-1 far fa-trash-alt"></i></button>
-                            <button id="${recipe.label}"  class="button edit is-info m-1 is-small">Edit <i class="ml-1 fas fa-edit"></i></button>
+                            <button id="${recipe.label.split(" ").join("")}" class=" button deleteCard m-1 is-small is-danger">Delete <i class="ml-1 far fa-trash-alt"></i></button>
+                            <button id="${recipe.label.split(" ").join("")}"  class="button edit is-info m-1 is-small">Edit <i class="ml-1 fas fa-edit"></i></button>
                             </div>
                             
                             
@@ -71,15 +71,15 @@ function handleEditButton(event) {
     let editForm = `
     `;
 
-    $('#' + event.target.id).replaceWith(editForm);
+    $(event.target.id).replaceWith(editForm);
 
 }
 
 function handleDeleteButton(event) {
     event.preventDefault();
     //insert axios call
-    console.log(event.target);
-    $('#' + event.target).replaceWith(``);
+    console.log(event.target.id);
+    $('#' +event.target.id).replaceWith(``);
 
 
 }
