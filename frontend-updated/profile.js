@@ -7,18 +7,18 @@
 
 
 function renderRecipeCard(recipe) {
-    console.log(recipe);
+    //console.log(recipe);
 
     let list = `<ul>`;
 
     for (let i = 0; i < recipe.length; i++) {
         list += `<li>${recipe.ingredients[i].id} - ${recipe.ingredients[i].quantity}</li>`;
-        console.log(list)
+        //console.log(list)
     };
     list += `</ul>`;
 
 
-    console.log(list)
+    //console.log(list)
 
     // let dishType = getRandomLabel(recipe.dishType);
     // let dietLabel = getRandomLabel(recipe.dietLabel);
@@ -39,7 +39,7 @@ function renderRecipeCard(recipe) {
                                     <p>
                                         <strong> <a href="${recipe.url}">${recipe.label}</a></strong><small> ${recipe.createdAt}</small>
                                         <br>
-                                        <small>${recipe.cals} cals</small>
+                                        <small>Calories of Entire Dish: ${recipe.cals} cals</small>
                                         <br>
                                         ${list}
                                         </p>
@@ -78,25 +78,26 @@ function handleEditButton(event) {
 function handleDeleteButton(event) {
     event.preventDefault();
     //insert axios call
-    console.log(event.target.id);
+    //console.log(event.target.id);
     $('#' +event.target.id).replaceWith(``);
 
 
 }
 
 async function getRecipes() {
+    
     let token = localStorage.getItem('jwt');
     try {
         const recipe = await axios({
             method: 'get',
-            url: "http://localhost:3003/private/recipes",
+            url: "http://localhost:3003/user/recipes",
             headers: { Authorization: `Bearer ${token}` },
-            "type": "merge",
+            //"type": "merge",
         });
-        console.log(recipe.data);
-        console.log(recipe.data.result);
+        console.log(recipe);
+        //console.log(recipe.data.result);
         let dataArr = Object.values(recipe.data.result);
-        console.log(dataArr);
+        //console.log(dataArr);
 
         for(let i=0; i< dataArr.length; i++){
             renderRecipeCard(dataArr[i]); 

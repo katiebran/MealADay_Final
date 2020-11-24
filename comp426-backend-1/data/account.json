@@ -23,6 +23,21 @@
     },
     "katiebran": {
       "passwordHash": "$2a$10$fR3DLyjBhhow.Cj742xIbetlpFvUIY8ZfEFXZI03ME.abKi51GsTS"
+    },
+    "annie": {
+      "passwordHash": "$2a$10$Ob/DGx8zFv8Pop/Ih52SZ.4paqqBPsUFFeZ9kbgshNng1IMA9MTX2"
+    },
+    "pie": {
+      "passwordHash": "$2a$10$PItl28eoHc9VFmei1RozEujWh0XxAaDYUs0Qjs5IjMFTTrtOweTBK"
+    },
+    "no": {
+      "passwordHash": "$2a$10$N.FcK3M9jiqBPnR4l/XYoeq/OfUx9ActQ3ulIybib34ulKxLnmBES"
+    },
+    "help": {
+      "passwordHash": "$2a$10$t6LRuDasgrjFi9PYBwnQueE9ka7NLL/YfH4nNsMyZAmUnTeZsBqxS"
+    },
+    "lizzy": {
+      "passwordHash": "$2a$10$zoYnDFZNwQxT3LT5heNoauHmaNTnimM7dv.S2G6t/5JNydn1HXKNy"
     }
   }
 }

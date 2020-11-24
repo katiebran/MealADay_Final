@@ -17,7 +17,7 @@ async function handleLogIn() {
         localStorage.setItem('jwt', token);
         console.log(token);
         localStorage.setItem('name', username);
-        window.location.replace('http://localhost:3004/quiz.html'); 
+        window.location.replace('http://localhost:3000/quiz.html'); 
         return true;
     } catch (error) {
         alert(error);
@@ -39,7 +39,7 @@ async function createUser() {
                 pass: password,
             }
         })
-        window.location.replace('http://localhost:3004/logIn.html');
+        window.location.replace('http://localhost:3000/logIn.html');
     } catch (error){
         alert(error + ": An account with this name already exists!");
     }
@@ -48,5 +48,5 @@ async function createUser() {
 function logOut() {
     localStorage.removeItem('jwt');
     localStorage.removeItem('name');
-    window.location.replace('http://localhost:3003/index.html');
+    window.location.replace('http://localhost:3000/index.html');
 }
