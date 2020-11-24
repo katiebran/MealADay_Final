@@ -190,3 +190,9 @@ nav {
 .feed{
   display: inline-block;
 }
+
+.logout_btn{
+  align-self: center;
+  text-align: center;
+  margin: 0 auto;
+}

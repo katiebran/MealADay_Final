@@ -17,7 +17,7 @@ async function handleLogIn() {
         localStorage.setItem('jwt', token);
         console.log(token);
         localStorage.setItem('name', username);
-        window.location.replace('http://localhost:3000/quiz.html'); 
+        window.location.replace('http://localhost:3000/profile.html'); 
         return true;
     } catch (error) {
         alert(error);
