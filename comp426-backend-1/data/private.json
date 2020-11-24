@@ -476,6 +476,206 @@
         "Tree-Nut-Free",
         "Alcohol-Free"
       ]
+    },
+    "Fried Onion And Jalapeño Bison Burger Recipe": {
+      "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_92796cf08125d80ed770b75466e4b6ba",
+      "img": "https://www.edamam.com/web-img/220/2208c54b0be8056096f2a8c439fcc407.jpg",
+      "label": "Fried Onion And Jalapeño Bison Burger Recipe",
+      "url": "http://www.foodrepublic.com/2014/05/13/fried-onion-and-jalapeno-bison-burger-recipe",
+      "cals": 803.8603694116555,
+      "ingredients": [
+        {
+          "text": "6 ounces ground bison",
+          "weight": 170.09713875,
+          "image": null
+        },
+        {
+          "text": "2 slices tomato",
+          "weight": 54,
+          "image": "https://www.edamam.com/food-img/23e/23e727a14f1035bdc2733bb0477efbd2.jpg"
+        },
+        {
+          "text": "1 piece red leaf romaine",
+          "weight": 313,
+          "image": null
+        },
+        {
+          "text": "2 fried onion rings",
+          "weight": 28.333333333333332,
+          "image": "https://www.edamam.com/food-img/835/835c79ac950fd0c84d3597a03c0c8f86.jpg"
+        },
+        {
+          "text": "2 slices deep-fried jalapeño (or just griddle up some sliced jalapeños)",
+          "weight": 28,
+          "image": "https://www.edamam.com/food-img/0df/0df9aa459870a6d477b0925c1fdb6d4c.jpg"
+        },
+        {
+          "text": "1/2 tablespoon honey dijon spread (mix equal parts mayo and honey-dijon)",
+          "weight": 7.21874999987795,
+          "image": null
+        },
+        {
+          "text": "1/2 tablespoon honey dijon spread (mix equal parts mayo and honey-dijon)",
+          "weight": 0,
+          "image": "https://www.edamam.com/food-img/198/198c7b25c23b4235b4cc33818c7b335f.jpg"
+        },
+        {
+          "text": "1 slice white cheddar",
+          "weight": 28,
+          "image": null
+        },
+        {
+          "text": "1 hamburger bun",
+          "weight": 42,
+          "image": "https://www.edamam.com/food-img/dbe/dbe3d135d1336ed19703d359e33d58dd.jpg"
+        }
+      ],
+      "dietLabel": [],
+      "healthLabel": [
+        "Peanut-Free",
+        "Tree-Nut-Free",
+        "Alcohol-Free"
+      ]
+    },
+    "Crispy Fried Onions and Nori Topping Recipe": {
+      "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_dc0f15d27c6da4454687afc70d9513b7",
+      "img": "https://www.edamam.com/web-img/ada/ada26d6ae9e01af9ea37e2143096b284.jpg",
+      "label": "Crispy Fried Onions and Nori Topping Recipe",
+      "url": "http://www.seriouseats.com/recipes/2014/07/crispy-fried-onions-nori-topping-recipe.html",
+      "cals": 93.29283862968751,
+      "ingredients": [
+        {
+          "text": "1 ounces (28 grams) fried shallots (see note above)",
+          "weight": 28.349523125,
+          "image": "https://www.edamam.com/food-img/d23/d23e3be21df05e9e16c05eadb12341e7.jpeg"
+        },
+        {
+          "text": "1 ounces (28 grams) fried garlic (see note above)",
+          "weight": 28.349523125,
+          "image": "https://www.edamam.com/food-img/6ee/6ee142951f48aaf94f4312409f8d133d.jpg"
+        },
+        {
+          "text": "1 ounces (28 grams) fried red onions (see note above)",
+          "weight": 28.349523125,
+          "image": "https://www.edamam.com/food-img/205/205e6bf2399b85d34741892ef91cc603.jpg"
+        },
+        {
+          "text": "1/4 ounces (7 grams) teriyaki nori (see note above)",
+          "weight": 7.08738078125,
+          "image": "https://www.edamam.com/food-img/193/1935b3e53c576e0f097393084d11b629.jpg"
+        },
+        {
+          "text": "1/4 teaspoon (1.5 grams) fine sea salt",
+          "weight": 1.5,
+          "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
+        },
+        {
+          "text": "Zest from 1 lemon",
+          "weight": 58,
+          "image": "https://www.edamam.com/food-img/70a/70acba3d4c734d7c70ef4efeed85dc8f.jpg"
+        }
+      ],
+      "dietLabel": [
+        "Low-Fat"
+      ],
+      "healthLabel": [
+        "Sugar-Conscious",
+        "Vegan",
+        "Vegetarian",
+        "Peanut-Free",
+        "Tree-Nut-Free",
+        "Alcohol-Free"
+      ]
+    },
+    "Steak Bites": {
+      "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_b3a023e49ddfe32818f9eaf0637e52ac",
+      "img": "https://www.edamam.com/web-img/705/705f9836e39fcd98464340791e9ca8bc.jpg",
+      "label": "Steak Bites",
+      "url": "http://thepioneerwoman.com/cooking/2009/01/steak-bites/",
+      "cals": 1109.9062188461,
+      "ingredients": [
+        {
+          "text": "1 lb Sirloin Steak (without Much Gristle) OR Pre-cut Beef Tips",
+          "weight": 453.59237,
+          "image": null
+        },
+        {
+          "text": "Kosher Salt To Taste",
+          "weight": 2.89195422,
+          "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
+        },
+        {
+          "text": "Fresh Ground Black Pepper To Taste",
+          "weight": 1.44597711,
+          "image": "https://www.edamam.com/food-img/c6e/c6e5c3bd8d3bc15175d9766971a4d1b2.jpg"
+        },
+        {
+          "text": "2 tbsp Butter",
+          "weight": 28.4,
+          "image": null
+        }
+      ],
+      "dietLabel": [
+        "Low-Carb"
+      ],
+      "healthLabel": [
+        "Sugar-Conscious",
+        "Peanut-Free",
+        "Tree-Nut-Free",
+        "Alcohol-Free"
+      ]
+    },
+    "Steak Teriyaki": {
+      "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_d96fa562f0bea153c2e23044a5c5bf4e",
+      "img": "https://www.edamam.com/web-img/662/662716e2f7946d8208afe3480def8a85.jpg",
+      "label": "Steak Teriyaki",
+      "url": "http://simplyrecipes.com/recipes/steak_teriyaki/",
+      "cals": 1742.4751230831034,
+      "ingredients": [
+        {
+          "text": "1/3 cup mirin rice wine",
+          "weight": 77.6,
+          "image": "https://www.edamam.com/food-img/bb7/bb76cdd34c080bf65908c09812fd9c8d.jpg"
+        },
+        {
+          "text": "1/3 cup sake",
+          "weight": 77.6,
+          "image": "https://www.edamam.com/food-img/bb7/bb76cdd34c080bf65908c09812fd9c8d.jpg"
+        },
+        {
+          "text": "1/3 cup soy sauce (if cooking gluten-free, use gluten-free soy sauce)",
+          "weight": 85,
+          "image": "https://www.edamam.com/food-img/f56/f562e461eb0618f367f538b836c17b82.jpg"
+        },
+        {
+          "text": "1 Tbsp sugar",
+          "weight": 12.4999999997887,
+          "image": "https://www.edamam.com/food-img/ecb/ecb3f5aaed96d0188c21b8369be07765.jpg"
+        },
+        {
+          "text": "1 Tbsp fresh grated ginger",
+          "weight": 5.99999999989856,
+          "image": "https://www.edamam.com/food-img/b9c/b9c06ef451ef29513880af0a53ebbaa6.jpg"
+        },
+        {
+          "text": "1 1/2 to 2 lb flank steak or skirt steak",
+          "weight": 793.7866475000001,
+          "image": "https://www.edamam.com/food-img/f8d/f8dedaeb7292857a4d92019961fb91fb.jpg"
+        },
+        {
+          "text": "Olive oil or grapeseed oil",
+          "weight": 14.313818405995745,
+          "image": null
+        }
+      ],
+      "dietLabel": [
+        "Low-Carb"
+      ],
+      "healthLabel": [
+        "Sugar-Conscious",
+        "Peanut-Free",
+        "Tree-Nut-Free"
+      ]
     }
   }
 }
