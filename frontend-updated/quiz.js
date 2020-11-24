@@ -347,12 +347,14 @@ async function addRecipe(event){
   console.log(id);
 
   let recipe = finalRecipe.recipe;
+  //let date = getDate();
+  let code = createID();
 
     let token = localStorage.getItem('jwt');
     try {
         const res = await axios({
             method: 'post',
-            url: "http://localhost:3003/private/recipes/" + id,
+            url: "http://localhost:3003/user/recipes/" + id,
             headers: {Authorization: `Bearer ${token}`},
             "type": "merge",
             'data': {
@@ -365,11 +367,11 @@ async function addRecipe(event){
                 'ingredients': recipe.ingredients,
                 'dietLabel': recipe.dietLabels,
                 'healthLabel': recipe.healthLabels,
+                'id': code
               }
             }
         });
         //console.log(res);
-        addUser(id);
     } catch (error) {
         alert(error);
     }
@@ -385,11 +387,15 @@ async function addRecipe(event){
 //   return hash; 
 // } 
 
-async function addUser(id){
+async function addUser(){
+  let name = localStorage.getItem('name');
+  let id = finalRecipe.recipe.label;
+  console.log(name);
+  console.log(id);
 
   let recipe = finalRecipe.recipe;
-  let date = getDate();
-  console.log(date)
+  //let date = getDate();
+  //console.log(date)
   let token = localStorage.getItem('jwt');
   try {
     const res = await axios({
@@ -422,7 +428,7 @@ export function renderQuiz(){
  
   quiz.on('click', '.answer', handleAnswerButton);
 
-  quiz.on('click', '.profileButton', addRecipe);
+  quiz.on('click', '.profileButton', addUser);
 
  // quiz.on('click', '.profileButton', handleProfileButton);
 }
@@ -433,11 +439,9 @@ $(function() {
 
 
 
-function getDate(){
-  var d = new Date();
-  let month = d.getMonth() + 1;
-  let day = d.getDay() + 1;
-  return (month + '/' + day)
+
+function createID(){
+  return '_' + Math.random().toString(36).substr(2, 9);
 }
 
 

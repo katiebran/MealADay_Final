@@ -19,7 +19,7 @@ function renderRecipeCard(recipe) {
                                     <p>
                                         <strong> <a href="${recipe.url}">${recipe.label}</a></strong>
                                         <br>
-                                        <small>${recipe.cals} cals</small>
+                                        <small>Calories of Entire Dish: ${recipe.cals} cals</small>
                                         <br>
                                         ${list}
                                         </p>
@@ -101,13 +101,14 @@ function handleDeleteButton(event) {
 }
 
 async function getRecipes() {
+    
     let token = localStorage.getItem('jwt');
     try {
         const recipe = await axios({
             method: 'get',
-            url: "http://localhost:3003/private/recipes",
+            url: "http://localhost:3003/user/recipes",
             headers: { Authorization: `Bearer ${token}` },
-            "type": "merge",
+            //"type": "merge",
         });
         // console.log(recipe.data);
         // console.log(recipe.data.result);
