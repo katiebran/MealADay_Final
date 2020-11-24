@@ -9,8 +9,9 @@ function renderRecipeCard(recipe) {
         // console.log(list)
     };
     list += `</ul>`;
+    console.log("this is teh recipe label" + recipe.label.split(" ").join(""));
     let card = `
-                    <div class="box" id="${recipe.id}">
+                    <div class="box" id="${recipe.label.split(" ").join("")}">
     
                         <img class="recipe_img" src="${recipe.img}">
                             <article class="media">
@@ -30,8 +31,8 @@ function renderRecipeCard(recipe) {
                                 
                             </div>
                             <div class="tags">
-                            <button id="${recipe.id}" class=" button deleteCard m-1 is-small is-danger">Delete <i class="ml-1 far fa-trash-alt"></i></button>
-                            <button id="${recipe.id}"  class="button edit is-info m-1 is-small">Edit <i class="ml-1 fas fa-edit"></i></button>
+                            <button id="${recipe.label.split(" ").join("")}" class=" button deleteCard m-1 is-small is-danger">Delete <i class="ml-1 far fa-trash-alt"></i></button>
+                            <button id="${recipe.label.split(" ").join("")}"  class="button edit is-info m-1 is-small">Edit <i class="ml-1 fas fa-edit"></i></button>
                             </div>
                             
                             
@@ -91,12 +92,26 @@ function handleEditButton(event) {
     $('#' + event.target.id).replaceWith(editForm);
 }
 
-function handleDeleteButton(event) {
+async function handleDeleteButton(event) {
     event.preventDefault();
     //insert axios call
     console.log('delete')
+    console.log(event.target.id);
     $('#' + event.target.id).replaceWith(``).remove();
 
+    let token = localStorage.getItem('jwt');
+    let curr = event.target.id;
+    let recipe = dataArr.find(r => r.label = curr)
+    try {
+        const res = await axios({
+            method: 'delete',
+            url: "http://localhost:3003/user/recipes/" + recipe.label,
+            headers: {Authorization: `Bearer ${token}`},
+            //"type": "merge",
+        });
+      } catch (error) {
+          alert(error);
+      }
 
 }
 

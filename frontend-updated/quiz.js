@@ -389,7 +389,7 @@ async function addRecipe(event){
 
 async function addUser(){
   let name = localStorage.getItem('name');
-  let id = finalRecipe.recipe.label;
+  let id = finalRecipe.recipe.label.split(" ").join("");
   console.log(name);
   console.log(id);
 
@@ -397,6 +397,7 @@ async function addUser(){
   //let date = getDate();
   //console.log(date)
   let token = localStorage.getItem('jwt');
+  console.log(id);
   try {
     const res = await axios({
         method: 'post',

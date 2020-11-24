@@ -105,6 +105,971 @@
           "Tree-Nut-Free",
           "Alcohol-Free"
         ]
+      },
+      "Italian Sliders": {
+        "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_4f10c3526950326e303bfe589b016515",
+        "img": "https://www.edamam.com/web-img/6d7/6d7a902b56c6fa291f4d8da5646d6fb4.jpg",
+        "label": "Italian Sliders",
+        "url": "http://www.food52.com/recipes/5104_italian_sliders",
+        "cals": 6092.505084900001,
+        "ingredients": [
+          {
+            "text": "1 1/2 pound ground beef",
+            "weight": 680.388555,
+            "image": "https://www.edamam.com/food-img/cfa/cfae8f9276eaf8f0d9349ba662744a0c.jpg"
+          },
+          {
+            "text": "1 pound hot Italian sausage",
+            "weight": 453.59237,
+            "image": "https://www.edamam.com/food-img/caf/cafaac36e1482d9bec67dd39393b5d12.jpg"
+          },
+          {
+            "text": "1 teaspoon Italian seasoning",
+            "weight": 1,
+            "image": "https://www.edamam.com/food-img/89b/89b37a04e46e052671d73addcb84aa51.jpg"
+          },
+          {
+            "text": "1 medium onion chopped finely",
+            "weight": 110,
+            "image": "https://www.edamam.com/food-img/205/205e6bf2399b85d34741892ef91cc603.jpg"
+          },
+          {
+            "text": "1 bell pepper chopped finely",
+            "weight": 119,
+            "image": "https://www.edamam.com/food-img/4dc/4dc48b1a506d334b4ab6671b9d56a18f.jpeg"
+          },
+          {
+            "text": "2 cloves minced garlic",
+            "weight": 6,
+            "image": "https://www.edamam.com/food-img/6ee/6ee142951f48aaf94f4312409f8d133d.jpg"
+          },
+          {
+            "text": "18 Dinner rolls (freshly baked best)",
+            "weight": 504,
+            "image": "https://www.edamam.com/food-img/608/6083ff46b1479341352f3fde8d1c9948.jpg"
+          },
+          {
+            "text": "8 ounces fresh Mozzarella sliced 1/4 inch thick",
+            "weight": 226.796185,
+            "image": "https://www.edamam.com/food-img/03e/03ec3a4d46bec5634dc8a352804e4e68.jpg"
+          },
+          {
+            "text": "4 large Roma tomatoes sliced 1/4 thick",
+            "weight": 310,
+            "image": "https://www.edamam.com/food-img/23e/23e727a14f1035bdc2733bb0477efbd2.jpg"
+          },
+          {
+            "text": "1/2 cup fresh large basil leaves",
+            "weight": 15,
+            "image": "https://www.edamam.com/food-img/5f1/5f1b05685ac2b404236a5d1c1f3c8c10.jpg"
+          },
+          {
+            "text": "3 tablespoons extra virgin olive oil",
+            "weight": 40.5,
+            "image": null
+          },
+          {
+            "text": "3 tablespoons balsamic vinegar",
+            "weight": 48,
+            "image": "https://www.edamam.com/food-img/90a/90a1f211768e166ecfff19e8b4747498.jpg"
+          }
+        ],
+        "dietLabel": [],
+        "healthLabel": [
+          "Sugar-Conscious",
+          "Peanut-Free",
+          "Tree-Nut-Free",
+          "Alcohol-Free"
+        ]
+      },
+      "Italian Sausage Meatball Heroes": {
+        "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_a7c9ea77aecbbb6306da4588859215aa",
+        "img": "https://www.edamam.com/web-img/4ae/4aeb49266902f1d379d2e56f6bc0ecd5.jpg",
+        "label": "Italian Sausage Meatball Heroes",
+        "url": "https://www.epicurious.com/recipes/food/views/italian-sausage-meatball-heroes-238290",
+        "cals": 5268.435086059375,
+        "ingredients": [
+          {
+            "text": "1 pound spicy or sweet Italian sausages, casings removed",
+            "weight": 453.59237,
+            "image": "https://www.edamam.com/food-img/1f5/1f5e4b71c948f4c6e6da9db6dbc32e9c.jpg"
+          },
+          {
+            "text": "1 (23- to 24-ounce) container purchased fresh marinara sauce, divided",
+            "weight": 666.2137934375,
+            "image": "https://www.edamam.com/food-img/08b/08b3bb49c006689a458a8b9c4a4e0057.jpg"
+          },
+          {
+            "text": "1/2 cup freshly grated Parmesan cheese (about 1 1/2 ounces)",
+            "weight": 42.5242846875,
+            "image": "https://www.edamam.com/food-img/f58/f588658627c59d5041e4664119829aa9.jpg"
+          },
+          {
+            "text": "1/3 cup chopped fresh Italian parsley, divided",
+            "weight": 20,
+            "image": "https://www.edamam.com/food-img/46a/46a132e96626d7989b4d6ed8c91f4da0.jpg"
+          },
+          {
+            "text": "1/3 cup chopped fresh basil, divided",
+            "weight": 8,
+            "image": "https://www.edamam.com/food-img/5f1/5f1b05685ac2b404236a5d1c1f3c8c10.jpg"
+          },
+          {
+            "text": "4 (5- to 6-inch-long) pieces French baguette, split horizontally",
+            "weight": 1200,
+            "image": "https://www.edamam.com/food-img/470/47053c77e167539c64fef3f2a3249bb2.jpg"
+          },
+          {
+            "text": "1 cup (packed) coarsely grated whole-milk mozzarella cheese",
+            "weight": 259.875,
+            "image": null
+          }
+        ],
+        "dietLabel": [],
+        "healthLabel": [
+          "Peanut-Free",
+          "Tree-Nut-Free",
+          "Alcohol-Free"
+        ],
+        "date": "11/2"
+      },
+      "Italian Pot Roast": {
+        "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_20d44a0ee39cd6815633f456967304ea",
+        "img": "https://www.edamam.com/web-img/b26/b266111151e65ed4114727ae75f91eaa.jpg",
+        "label": "Italian Pot Roast",
+        "url": "http://simplyrecipes.com/recipes/italian_pot_roast/",
+        "cals": 4098.1121502999995,
+        "ingredients": [
+          {
+            "text": "3 1/2 to 4 pound rump or chuck beef roast",
+            "weight": 1700.9713875,
+            "image": "https://www.edamam.com/food-img/bab/bab88ab3ea40d34e4c8ae35d6b30344a.jpg"
+          },
+          {
+            "text": "1 teaspoon salt plus more to taste",
+            "weight": 6,
+            "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
+          },
+          {
+            "text": "1/2 teaspoon freshly ground black pepper",
+            "weight": 1.15,
+            "image": "https://www.edamam.com/food-img/c6e/c6e5c3bd8d3bc15175d9766971a4d1b2.jpg"
+          },
+          {
+            "text": "1/2 cup extra virgin olive oil",
+            "weight": 108,
+            "image": null
+          },
+          {
+            "text": "1 large carrot, diced (about 1 cup)",
+            "weight": 152.5,
+            "image": "https://www.edamam.com/food-img/121/121e33fce0bb9546ed7d060b6c114e29.jpg"
+          },
+          {
+            "text": "1 large celery stalk, diced (about 1 cup)",
+            "weight": 126.25,
+            "image": "https://www.edamam.com/food-img/d91/d91d2aed1c36d8fad54c4d7dc58f5a18.jpg"
+          },
+          {
+            "text": "1 medium red onion, diced (1 to 1 1/2 cups)",
+            "weight": 200,
+            "image": "https://www.edamam.com/food-img/205/205e6bf2399b85d34741892ef91cc603.jpg"
+          },
+          {
+            "text": "2 garlic cloves, finely minced",
+            "weight": 6,
+            "image": "https://www.edamam.com/food-img/6ee/6ee142951f48aaf94f4312409f8d133d.jpg"
+          },
+          {
+            "text": "2 Tbsp chopped fresh flat-leaf parsley",
+            "weight": 7.6,
+            "image": "https://www.edamam.com/food-img/46a/46a132e96626d7989b4d6ed8c91f4da0.jpg"
+          },
+          {
+            "text": "1 bay leaf",
+            "weight": 0.6,
+            "image": "https://www.edamam.com/food-img/0f9/0f9f5f95df173e9ffaaff2977bef88f3.jpg"
+          },
+          {
+            "text": "1 Tbsp finely chopped fresh sage",
+            "weight": 8,
+            "image": "https://www.edamam.com/food-img/509/50984580e9aad4b4ddd5b7ed45a64bf4.jpg"
+          },
+          {
+            "text": "3 cups medium-bodied Italian red wine (we used a Barbera)",
+            "weight": 705.5999999999999,
+            "image": "https://www.edamam.com/food-img/82b/82b8d0db2d5c38fc7498a657c0afc4ee.JPG"
+          },
+          {
+            "text": "1 28-ounce can Italian plum tomatoes, put through a food mill to remove the seeds",
+            "weight": 793.7866475000001,
+            "image": "https://www.edamam.com/food-img/23e/23e727a14f1035bdc2733bb0477efbd2.jpg"
+          }
+        ],
+        "dietLabel": [],
+        "healthLabel": [
+          "Peanut-Free",
+          "Tree-Nut-Free"
+        ],
+        "date": "11/2"
+      }
+    }
+  },
+  "erin": {
+    "erin": {
+      "recipes": {
+        "How To Cook Perfect Steak in the Oven": {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_cdc351364a88a97933e67779d46b78f4",
+          "img": "https://www.edamam.com/web-img/2e9/2e9b1066ae08c2701d1acfc491f6c9d9",
+          "label": "How To Cook Perfect Steak in the Oven",
+          "url": "http://www.thekitchn.com/how-to-cook-perfect-steak-in-the-oven-108490",
+          "cals": 1363.3572302000002,
+          "ingredients": [
+            {
+              "text": "1 1-pound steak, 1 to 1 1/2 inches thick, rib-eye, T-bone, filet mignon, or strip steak",
+              "weight": 453.59237,
+              "image": "https://www.edamam.com/food-img/f70/f70890fe73fc9e333aa584a88a61e351.jpg"
+            },
+            {
+              "text": "2 tablespoons canola or vegetable oil",
+              "weight": 28,
+              "image": "https://www.edamam.com/food-img/6e5/6e51a63a6300a8ea1b4c4cc68dfaba33.jpg"
+            },
+            {
+              "text": "1 tablespoon kosher salt",
+              "weight": 14.562499999753793,
+              "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
+            }
+          ],
+          "dietLabel": [
+            "Low-Carb"
+          ],
+          "healthLabel": [
+            "Sugar-Conscious",
+            "Peanut-Free",
+            "Tree-Nut-Free",
+            "Alcohol-Free",
+            "Immuno-Supportive"
+          ]
+        },
+        "Persian Chicken": {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_4caf01683bf99ddc7c08c35774aae54c",
+          "img": "https://www.edamam.com/web-img/8f8/8f810dfe198fa3e520d291f3fcf62bbf.jpg",
+          "label": "Persian Chicken",
+          "url": "http://www.bbcgoodfood.com/recipes/7343/",
+          "cals": 4115.31372402923,
+          "ingredients": [
+            {
+              "text": "2 large onions",
+              "weight": 300,
+              "image": "https://www.edamam.com/food-img/205/205e6bf2399b85d34741892ef91cc603.jpg"
+            },
+            {
+              "text": "750 g chicken",
+              "weight": 750,
+              "image": "https://www.edamam.com/food-img/d33/d338229d774a743f7858f6764e095878.jpg"
+            },
+            {
+              "text": "500 g mushrooms",
+              "weight": 500,
+              "image": "https://www.edamam.com/food-img/d63/d639cf4a2afc7407c1d1ce286028136b.jpg"
+            },
+            {
+              "text": "1 cup water",
+              "weight": 237,
+              "image": "https://www.edamam.com/food-img/5dd/5dd9d1361847b2ca53c4b19a8f92627e.jpg"
+            },
+            {
+              "text": "1 cup red wine",
+              "weight": 235.2,
+              "image": "https://www.edamam.com/food-img/82b/82b8d0db2d5c38fc7498a657c0afc4ee.JPG"
+            },
+            {
+              "text": "2 teaspoons chicken stock",
+              "weight": 10.00000000050721,
+              "image": "https://www.edamam.com/food-img/26a/26a10c4cb4e07bab54d8a687ef5ac7d8.jpg"
+            },
+            {
+              "text": "200 ml mayonnaise",
+              "weight": 195.2759811031433,
+              "image": null
+            },
+            {
+              "text": "200 ml cream",
+              "weight": 201.53157530298427,
+              "image": "https://www.edamam.com/food-img/484/4848d71f6a14dd5076083f5e17925420.jpg"
+            },
+            {
+              "text": "small bunch of parsley",
+              "weight": 45,
+              "image": "https://www.edamam.com/food-img/46a/46a132e96626d7989b4d6ed8c91f4da0.jpg"
+            },
+            {
+              "text": "1 teaspoon curry powder",
+              "weight": 2,
+              "image": "https://www.edamam.com/food-img/9ce/9ce02a2887385fd2adaec8dd8adcf9c5.jpg"
+            }
+          ],
+          "dietLabel": [
+            "Low-Carb"
+          ],
+          "healthLabel": [
+            "Peanut-Free",
+            "Tree-Nut-Free"
+          ]
+        }
+      }
+    },
+    "recipes": {
+      "Chicken Feet Stock": {
+        "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_11f52d212cfd385f39a377b3f1549a0c",
+        "img": "https://www.edamam.com/web-img/ae9/ae96650072cc599967d945c5e9961bb7.JPG",
+        "label": "Chicken Feet Stock",
+        "url": "https://food52.com/recipes/3478-chicken-feet-stock",
+        "cals": 274.3604599999949,
+        "ingredients": [
+          {
+            "text": "1 chicken carcass, from a roasted chicken",
+            "weight": 500,
+            "image": "https://www.edamam.com/food-img/1d7/1d785da8ce8dca92df262103058b05d1.jpg"
+          },
+          {
+            "text": "2 or more chicken feet",
+            "weight": 2400,
+            "image": "https://www.edamam.com/food-img/d33/d338229d774a743f7858f6764e095878.jpg"
+          },
+          {
+            "text": "1 large yellow onion, quartered",
+            "weight": 150,
+            "image": "https://www.edamam.com/food-img/205/205e6bf2399b85d34741892ef91cc603.jpg"
+          },
+          {
+            "text": "4 green onions or 2 leeks",
+            "weight": 60,
+            "image": "https://www.edamam.com/food-img/b89/b89986ed6aa466285bdd99bac34b3c46.jpg"
+          },
+          {
+            "text": "1 tablespoon black peppercorns, whole",
+            "weight": 6.9,
+            "image": "https://www.edamam.com/food-img/c6e/c6e5c3bd8d3bc15175d9766971a4d1b2.jpg"
+          },
+          {
+            "text": "1 tablespoon crushed red pepper flakes",
+            "weight": 2.312499999960903,
+            "image": "https://www.edamam.com/food-img/6cb/6cb8e4510251a322178f6e191b3a7b1b.jpeg"
+          }
+        ],
+        "dietLabel": [
+          "Low-Carb"
+        ],
+        "healthLabel": [
+          "Sugar-Conscious",
+          "Peanut-Free",
+          "Tree-Nut-Free",
+          "Alcohol-Free"
+        ]
+      },
+      "Italian Beef": {
+        "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_3506681174dcfc57f738138a23cc96c5",
+        "img": "https://www.edamam.com/web-img/e5d/e5d55339cd87ce1c7ac088deca879f95.jpeg",
+        "label": "Italian Beef",
+        "url": "https://www.foodnetwork.com/recipes/sandra-lee/italian-beef-recipe-1949984",
+        "cals": 1943.336115749786,
+        "ingredients": [
+          {
+            "text": "1 1/2 pounds flank steak",
+            "weight": 680.388555,
+            "image": "https://www.edamam.com/food-img/f8d/f8dedaeb7292857a4d92019961fb91fb.jpg"
+          },
+          {
+            "text": "1/2 cup light Italian salad dressing",
+            "weight": 125,
+            "image": "https://www.edamam.com/food-img/241/24178db68d42001caf980f8f209534cb.jpg"
+          },
+          {
+            "text": "1 1/2 cups tomato basil pasta sauce",
+            "weight": 396,
+            "image": "https://www.edamam.com/food-img/08b/08b3bb49c006689a458a8b9c4a4e0057.jpg"
+          },
+          {
+            "text": "1 tablespoon chopped garlic",
+            "weight": 8.499999999856291,
+            "image": "https://www.edamam.com/food-img/6ee/6ee142951f48aaf94f4312409f8d133d.jpg"
+          },
+          {
+            "text": "1/4 cup Chianti red wine",
+            "weight": 58.8,
+            "image": "https://www.edamam.com/food-img/82b/82b8d0db2d5c38fc7498a657c0afc4ee.JPG"
+          },
+          {
+            "text": "1 teaspoon Italian seasoning",
+            "weight": 1,
+            "image": "https://www.edamam.com/food-img/89b/89b37a04e46e052671d73addcb84aa51.jpg"
+          }
+        ],
+        "dietLabel": [
+          "Low-Carb"
+        ],
+        "healthLabel": [
+          "Peanut-Free",
+          "Tree-Nut-Free"
+        ]
+      }
+    }
+  },
+  "lizzy": {
+    "recipes": {
+      "Italian Sausage Meatball Heroes": {
+        "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_a7c9ea77aecbbb6306da4588859215aa",
+        "img": "https://www.edamam.com/web-img/4ae/4aeb49266902f1d379d2e56f6bc0ecd5.jpg",
+        "label": "Italian Sausage Meatball Heroes",
+        "url": "https://www.epicurious.com/recipes/food/views/italian-sausage-meatball-heroes-238290",
+        "cals": 5268.435086059375,
+        "ingredients": [
+          {
+            "text": "1 pound spicy or sweet Italian sausages, casings removed",
+            "weight": 453.59237,
+            "image": "https://www.edamam.com/food-img/1f5/1f5e4b71c948f4c6e6da9db6dbc32e9c.jpg"
+          },
+          {
+            "text": "1 (23- to 24-ounce) container purchased fresh marinara sauce, divided",
+            "weight": 666.2137934375,
+            "image": "https://www.edamam.com/food-img/08b/08b3bb49c006689a458a8b9c4a4e0057.jpg"
+          },
+          {
+            "text": "1/2 cup freshly grated Parmesan cheese (about 1 1/2 ounces)",
+            "weight": 42.5242846875,
+            "image": "https://www.edamam.com/food-img/f58/f588658627c59d5041e4664119829aa9.jpg"
+          },
+          {
+            "text": "1/3 cup chopped fresh Italian parsley, divided",
+            "weight": 20,
+            "image": "https://www.edamam.com/food-img/46a/46a132e96626d7989b4d6ed8c91f4da0.jpg"
+          },
+          {
+            "text": "1/3 cup chopped fresh basil, divided",
+            "weight": 8,
+            "image": "https://www.edamam.com/food-img/5f1/5f1b05685ac2b404236a5d1c1f3c8c10.jpg"
+          },
+          {
+            "text": "4 (5- to 6-inch-long) pieces French baguette, split horizontally",
+            "weight": 1200,
+            "image": "https://www.edamam.com/food-img/470/47053c77e167539c64fef3f2a3249bb2.jpg"
+          },
+          {
+            "text": "1 cup (packed) coarsely grated whole-milk mozzarella cheese",
+            "weight": 259.875,
+            "image": null
+          }
+        ],
+        "dietLabel": [],
+        "healthLabel": [
+          "Peanut-Free",
+          "Tree-Nut-Free",
+          "Alcohol-Free"
+        ]
+      },
+      "Spaghetti with Italian Sausage Ragout": {
+        "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_ee2881d5fc5c91ab7d93e85b96b7069b",
+        "img": "https://www.edamam.com/web-img/e5b/e5ba35d131d1c5985f002864a25cb46f.jpg",
+        "label": "Spaghetti with Italian Sausage Ragout",
+        "url": "http://honestcooking.com/spaghetti-with-italian-sausage-ragout/",
+        "cals": 3001.390560078182,
+        "ingredients": [
+          {
+            "text": "1 tablespoon extra-virgin olive oil",
+            "weight": 13.5,
+            "image": null
+          },
+          {
+            "text": "½ pound italian sausage, casings removed, crumbled",
+            "weight": 226.796185,
+            "image": "https://www.edamam.com/food-img/caf/cafaac36e1482d9bec67dd39393b5d12.jpg"
+          },
+          {
+            "text": "3 garlic cloves, minced",
+            "weight": 9,
+            "image": "https://www.edamam.com/food-img/6ee/6ee142951f48aaf94f4312409f8d133d.jpg"
+          },
+          {
+            "text": "1 medium red bell pepper, seeds and membranes removed, cut in ¼ inch dice",
+            "weight": 119,
+            "image": "https://www.edamam.com/food-img/4dc/4dc48b1a506d334b4ab6671b9d56a18f.jpeg"
+          },
+          {
+            "text": "2 teaspoons dried oregano",
+            "weight": 2,
+            "image": "https://www.edamam.com/food-img/1b0/1b0eaffb1c261606e0d82fed8e9747a7.jpg"
+          },
+          {
+            "text": "½ teaspoon red chili flakes",
+            "weight": 0.9,
+            "image": "https://www.edamam.com/food-img/374/3742b9434a0fb66a45e0dd6d227ba669.jpg"
+          },
+          {
+            "text": "½ cup dry white wine",
+            "weight": 117.6,
+            "image": "https://www.edamam.com/food-img/a71/a718cf3c52add522128929f1f324d2ab.jpg"
+          },
+          {
+            "text": "1 28-ounce can italian plum tomatoes with juice",
+            "weight": 793.7866475000001,
+            "image": "https://www.edamam.com/food-img/23e/23e727a14f1035bdc2733bb0477efbd2.jpg"
+          },
+          {
+            "text": "¼ cup tomato paste",
+            "weight": 66,
+            "image": null
+          },
+          {
+            "text": "1 bay leaf",
+            "weight": 0.6,
+            "image": "https://www.edamam.com/food-img/0f9/0f9f5f95df173e9ffaaff2977bef88f3.jpg"
+          },
+          {
+            "text": "2 teaspoons salt",
+            "weight": 12,
+            "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
+          },
+          {
+            "text": "1 teaspoon freshly ground black pepper",
+            "weight": 2.3,
+            "image": "https://www.edamam.com/food-img/c6e/c6e5c3bd8d3bc15175d9766971a4d1b2.jpg"
+          },
+          {
+            "text": "1 tablespoon granulated sugar, optional",
+            "weight": 12.4999999997887,
+            "image": "https://www.edamam.com/food-img/ecb/ecb3f5aaed96d0188c21b8369be07765.jpg"
+          },
+          {
+            "text": "1 pound spaghetti",
+            "weight": 453.59237,
+            "image": null
+          },
+          {
+            "text": "Grated parmigiano cheese",
+            "weight": 0,
+            "image": "https://www.edamam.com/food-img/f58/f588658627c59d5041e4664119829aa9.jpg"
+          },
+          {
+            "text": "Grated parmigiano cheese",
+            "weight": 0,
+            "image": null
+          },
+          {
+            "text": "Chopped italian flat leaf parsley",
+            "weight": 18.29575202499789,
+            "image": "https://www.edamam.com/food-img/46a/46a132e96626d7989b4d6ed8c91f4da0.jpg"
+          }
+        ],
+        "dietLabel": [],
+        "healthLabel": [
+          "Peanut-Free",
+          "Tree-Nut-Free"
+        ]
+      }
+    }
+  },
+  "katiebran": {
+    "recipes": {
+      "Persian Chicken": {
+        "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_4caf01683bf99ddc7c08c35774aae54c",
+        "img": "https://www.edamam.com/web-img/8f8/8f810dfe198fa3e520d291f3fcf62bbf.jpg",
+        "label": "Persian Chicken",
+        "url": "http://www.bbcgoodfood.com/recipes/7343/",
+        "cals": 4115.31372402923,
+        "ingredients": [
+          {
+            "text": "2 large onions",
+            "weight": 300,
+            "image": "https://www.edamam.com/food-img/205/205e6bf2399b85d34741892ef91cc603.jpg"
+          },
+          {
+            "text": "750 g chicken",
+            "weight": 750,
+            "image": "https://www.edamam.com/food-img/d33/d338229d774a743f7858f6764e095878.jpg"
+          },
+          {
+            "text": "500 g mushrooms",
+            "weight": 500,
+            "image": "https://www.edamam.com/food-img/d63/d639cf4a2afc7407c1d1ce286028136b.jpg"
+          },
+          {
+            "text": "1 cup water",
+            "weight": 237,
+            "image": "https://www.edamam.com/food-img/5dd/5dd9d1361847b2ca53c4b19a8f92627e.jpg"
+          },
+          {
+            "text": "1 cup red wine",
+            "weight": 235.2,
+            "image": "https://www.edamam.com/food-img/82b/82b8d0db2d5c38fc7498a657c0afc4ee.JPG"
+          },
+          {
+            "text": "2 teaspoons chicken stock",
+            "weight": 10.00000000050721,
+            "image": "https://www.edamam.com/food-img/26a/26a10c4cb4e07bab54d8a687ef5ac7d8.jpg"
+          },
+          {
+            "text": "200 ml mayonnaise",
+            "weight": 195.2759811031433,
+            "image": null
+          },
+          {
+            "text": "200 ml cream",
+            "weight": 201.53157530298427,
+            "image": "https://www.edamam.com/food-img/484/4848d71f6a14dd5076083f5e17925420.jpg"
+          },
+          {
+            "text": "small bunch of parsley",
+            "weight": 45,
+            "image": "https://www.edamam.com/food-img/46a/46a132e96626d7989b4d6ed8c91f4da0.jpg"
+          },
+          {
+            "text": "1 teaspoon curry powder",
+            "weight": 2,
+            "image": "https://www.edamam.com/food-img/9ce/9ce02a2887385fd2adaec8dd8adcf9c5.jpg"
+          }
+        ],
+        "dietLabel": [
+          "Low-Carb"
+        ],
+        "healthLabel": [
+          "Peanut-Free",
+          "Tree-Nut-Free"
+        ]
+      },
+      "Chicken Vesuvio": {
+        "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_b79327d05b8e5b838ad6cfd9576b30b6",
+        "img": "https://www.edamam.com/web-img/e42/e42f9119813e890af34c259785ae1cfb.jpg",
+        "label": "Chicken Vesuvio",
+        "url": "http://www.seriouseats.com/recipes/2011/12/chicken-vesuvio-recipe.html",
+        "cals": 4228.043058200812,
+        "ingredients": [
+          {
+            "text": "1/2 cup olive oil",
+            "weight": 108,
+            "image": null
+          },
+          {
+            "text": "5 cloves garlic, peeled",
+            "weight": 15,
+            "image": "https://www.edamam.com/food-img/6ee/6ee142951f48aaf94f4312409f8d133d.jpg"
+          },
+          {
+            "text": "2 large russet potatoes, peeled and cut into chunks",
+            "weight": 738,
+            "image": "https://www.edamam.com/food-img/71b/71b3756ecfd3d1efa075874377038b67.jpg"
+          },
+          {
+            "text": "1 3-4 pound chicken, cut into 8 pieces (or 3 pound chicken legs)",
+            "weight": 1587.5732950000001,
+            "image": "https://www.edamam.com/food-img/d33/d338229d774a743f7858f6764e095878.jpg"
+          },
+          {
+            "text": "3/4 cup white wine",
+            "weight": 176.39999999999998,
+            "image": "https://www.edamam.com/food-img/a71/a718cf3c52add522128929f1f324d2ab.jpg"
+          },
+          {
+            "text": "3/4 cup chicken stock",
+            "weight": 180,
+            "image": "https://www.edamam.com/food-img/26a/26a10c4cb4e07bab54d8a687ef5ac7d8.jpg"
+          },
+          {
+            "text": "3 tablespoons chopped parsley",
+            "weight": 11.399999999999999,
+            "image": "https://www.edamam.com/food-img/46a/46a132e96626d7989b4d6ed8c91f4da0.jpg"
+          },
+          {
+            "text": "1 tablespoon dried oregano",
+            "weight": 2.9999999997971143,
+            "image": "https://www.edamam.com/food-img/1b0/1b0eaffb1c261606e0d82fed8e9747a7.jpg"
+          },
+          {
+            "text": "Salt and pepper",
+            "weight": 17.720239769998784,
+            "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
+          },
+          {
+            "text": "Salt and pepper",
+            "weight": 8.860119884999392,
+            "image": "https://www.edamam.com/food-img/c6e/c6e5c3bd8d3bc15175d9766971a4d1b2.jpg"
+          },
+          {
+            "text": "1 cup frozen peas, thawed",
+            "weight": 134,
+            "image": "https://www.edamam.com/food-img/c91/c9130a361d5c5b279bf48c69e2466ec2.jpg"
+          }
+        ],
+        "dietLabel": [
+          "Low-Carb"
+        ],
+        "healthLabel": [
+          "Peanut-Free",
+          "Tree-Nut-Free"
+        ]
+      },
+      "Steak Bites": {
+        "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_b3a023e49ddfe32818f9eaf0637e52ac",
+        "img": "https://www.edamam.com/web-img/705/705f9836e39fcd98464340791e9ca8bc.jpg",
+        "label": "Steak Bites",
+        "url": "http://thepioneerwoman.com/cooking/2009/01/steak-bites/",
+        "cals": 1109.9062188461,
+        "ingredients": [
+          {
+            "text": "1 lb Sirloin Steak (without Much Gristle) OR Pre-cut Beef Tips",
+            "weight": 453.59237,
+            "image": null
+          },
+          {
+            "text": "Kosher Salt To Taste",
+            "weight": 2.89195422,
+            "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
+          },
+          {
+            "text": "Fresh Ground Black Pepper To Taste",
+            "weight": 1.44597711,
+            "image": "https://www.edamam.com/food-img/c6e/c6e5c3bd8d3bc15175d9766971a4d1b2.jpg"
+          },
+          {
+            "text": "2 tbsp Butter",
+            "weight": 28.4,
+            "image": null
+          }
+        ],
+        "dietLabel": [
+          "Low-Carb"
+        ],
+        "healthLabel": [
+          "Sugar-Conscious",
+          "Peanut-Free",
+          "Tree-Nut-Free",
+          "Alcohol-Free"
+        ]
+      },
+      "Fried Bologna Sandwich": {
+        "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_7b9ffc08c7ff24012964880082eb9b22",
+        "img": "https://www.edamam.com/web-img/f0e/f0ec1af2fbbe19fdb916f6ebfa29b05b.jpg",
+        "label": "Fried Bologna Sandwich",
+        "url": "http://www.thedailymeal.com/recipes/fried-bologna-sandwich-recipe-1",
+        "cals": 1543.62,
+        "ingredients": [
+          {
+            "text": "2 slices white sourdough bread",
+            "weight": 278,
+            "image": "https://www.edamam.com/food-img/470/47053c77e167539c64fef3f2a3249bb2.jpg"
+          },
+          {
+            "text": "6 slices Oscar Meyer bologna",
+            "weight": 168,
+            "image": "https://www.edamam.com/food-img/06a/06ab2a085b14df76e2fb76356fb83fa8.jpg"
+          },
+          {
+            "text": "3 slices American cheese",
+            "weight": 63,
+            "image": "https://www.edamam.com/food-img/ea0/ea0c5a115d3e067852af1f1b0b10ada8.jpg"
+          },
+          {
+            "text": "1 egg, fried over medium",
+            "weight": 43,
+            "image": "https://www.edamam.com/food-img/a7e/a7ec7c337cb47c6550b3b118e357f077.jpg"
+          }
+        ],
+        "dietLabel": [
+          "Balanced"
+        ],
+        "healthLabel": [
+          "Peanut-Free",
+          "Tree-Nut-Free",
+          "Alcohol-Free"
+        ]
+      },
+      "Jollof rice with fried plantains": {
+        "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_420959b70efcef9ce6b24ca2d1622a17",
+        "img": "https://www.edamam.com/web-img/669/669f9984001f7cf9322b1199926b6904.jpg",
+        "label": "Jollof rice with fried plantains",
+        "url": "http://www.bbc.co.uk/food/recipes/jollof_rice_with_fried_79619",
+        "cals": 1979.3069614995911,
+        "ingredients": [
+          {
+            "text": "1 tbsp olive or vegetable oil",
+            "weight": 14,
+            "image": "https://www.edamam.com/food-img/6e5/6e51a63a6300a8ea1b4c4cc68dfaba33.jpg"
+          },
+          {
+            "text": "2 large onions, sliced",
+            "weight": 300,
+            "image": "https://www.edamam.com/food-img/205/205e6bf2399b85d34741892ef91cc603.jpg"
+          },
+          {
+            "text": "2 x 400g/14oz cans plum tomatoes",
+            "weight": 800,
+            "image": "https://www.edamam.com/food-img/23e/23e727a14f1035bdc2733bb0477efbd2.jpg"
+          },
+          {
+            "text": "4 fresh tomatoes, chopped",
+            "weight": 492,
+            "image": "https://www.edamam.com/food-img/23e/23e727a14f1035bdc2733bb0477efbd2.jpg"
+          },
+          {
+            "text": "1 red pepper, diced",
+            "weight": 119,
+            "image": "https://www.edamam.com/food-img/4dc/4dc48b1a506d334b4ab6671b9d56a18f.jpeg"
+          },
+          {
+            "text": "4 tbsp tomato purée",
+            "weight": 60.4999999989772,
+            "image": "https://www.edamam.com/food-img/1d7/1d785da8ce8dca92df262103058b05d1.jpg"
+          },
+          {
+            "text": "¼ tsp cayenne pepper or chilli powder",
+            "weight": 0.45,
+            "image": "https://www.edamam.com/food-img/374/3742b9434a0fb66a45e0dd6d227ba669.jpg"
+          },
+          {
+            "text": "1 tsp curry powder",
+            "weight": 2,
+            "image": "https://www.edamam.com/food-img/9ce/9ce02a2887385fd2adaec8dd8adcf9c5.jpg"
+          },
+          {
+            "text": "1 bay leaf",
+            "weight": 0.6,
+            "image": "https://www.edamam.com/food-img/0f9/0f9f5f95df173e9ffaaff2977bef88f3.jpg"
+          },
+          {
+            "text": "Sprig fresh thyme",
+            "weight": 3,
+            "image": "https://www.edamam.com/food-img/3e7/3e7cf3c8d767a90b906447f5e74059f7.jpg"
+          },
+          {
+            "text": "1 stock cube",
+            "weight": 474.90999999979545,
+            "image": "https://www.edamam.com/food-img/26a/26a10c4cb4e07bab54d8a687ef5ac7d8.jpg"
+          },
+          {
+            "text": "225g/8oz long-grain or basmati rice",
+            "weight": 225,
+            "image": "https://www.edamam.com/food-img/e35/e35ea1529983a3db51a32a1afa7b3837.jpg"
+          },
+          {
+            "text": "Salt and freshly ground black pepper",
+            "weight": 14.247299999993862,
+            "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
+          },
+          {
+            "text": "Salt and freshly ground black pepper",
+            "weight": 7.123649999996931,
+            "image": "https://www.edamam.com/food-img/c6e/c6e5c3bd8d3bc15175d9766971a4d1b2.jpg"
+          },
+          {
+            "text": "2 plantains, cut into slices and deep fried",
+            "weight": 358,
+            "image": "https://www.edamam.com/food-img/a89/a895e325e16d684d8df7786aa7898f73.jpg"
+          }
+        ],
+        "dietLabel": [
+          "Low-Fat"
+        ],
+        "healthLabel": [
+          "Peanut-Free",
+          "Tree-Nut-Free",
+          "Alcohol-Free"
+        ]
+      },
+      "Panfried Flank Steak": {
+        "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_b1c3d81bc67ba4b029186f2721d21606",
+        "img": "https://www.edamam.com/web-img/282/28272cdd5f3c3b2fe128ed91e54fcd01.jpg",
+        "label": "Panfried Flank Steak",
+        "url": "http://www.saveur.com/article/Recipes/Panfried-Flank-Steak",
+        "cals": 1704.80564256915,
+        "ingredients": [
+          {
+            "text": "2 tbsp. butter",
+            "weight": 28.4,
+            "image": null
+          },
+          {
+            "text": "3 cloves garlic, peeled and crushed",
+            "weight": 9,
+            "image": "https://www.edamam.com/food-img/6ee/6ee142951f48aaf94f4312409f8d133d.jpg"
+          },
+          {
+            "text": "1 1½-lb. piece flank steak, about ¾\" thick",
+            "weight": 680.388555,
+            "image": "https://www.edamam.com/food-img/f8d/f8dedaeb7292857a4d92019961fb91fb.jpg"
+          },
+          {
+            "text": "Salt and freshly ground pepper",
+            "weight": 4.5725313299999994,
+            "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
+          },
+          {
+            "text": "Salt and freshly ground pepper",
+            "weight": 2.2862656649999997,
+            "image": "https://www.edamam.com/food-img/c6e/c6e5c3bd8d3bc15175d9766971a4d1b2.jpg"
+          },
+          {
+            "text": "3 tbsp. olive oil",
+            "weight": 40.5,
+            "image": null
+          },
+          {
+            "text": "1 tbsp. finely chopped curly parsley",
+            "weight": 3.8,
+            "image": "https://www.edamam.com/food-img/46a/46a132e96626d7989b4d6ed8c91f4da0.jpg"
+          }
+        ],
+        "dietLabel": [
+          "Low-Carb"
+        ],
+        "healthLabel": [
+          "Sugar-Conscious",
+          "Peanut-Free",
+          "Tree-Nut-Free",
+          "Alcohol-Free"
+        ]
+      }
+    }
+  },
+  "test": {
+    "recipes": {
+      "AsianChickenandFriedRice": {
+        "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_a4ae864d1bd80edab8b0ef7046b69d7c",
+        "img": "https://www.edamam.com/web-img/8a9/8a976e0e97a6ecde02258eb052f9021c.jpg",
+        "label": "Asian Chicken and Fried Rice",
+        "url": "http://www.myrecipes.com/recipe/asian-chicken-fried-rice",
+        "cals": 1373.0324120659593,
+        "ingredients": [
+          {
+            "text": "1 (8.8-oz.) pouch ready-to-serve Asian fried rice",
+            "weight": 249.47580890724242,
+            "image": null
+          },
+          {
+            "text": "2 cups shredded cooked chicken",
+            "weight": 280,
+            "image": null
+          },
+          {
+            "text": "1 tablespoon chopped fresh basil",
+            "weight": 2.65,
+            "image": "https://www.edamam.com/food-img/5f1/5f1b05685ac2b404236a5d1c1f3c8c10.jpg"
+          },
+          {
+            "text": "2 tablespoons fresh lemon juice",
+            "weight": 30.4999999994844,
+            "image": "https://www.edamam.com/food-img/e31/e310952d214e78a4cb8b73f30ceeaaf2.jpg"
+          }
+        ],
+        "dietLabel": [
+          "Low-Fat"
+        ],
+        "healthLabel": [
+          "Sugar-Conscious",
+          "Peanut-Free",
+          "Tree-Nut-Free",
+          "Alcohol-Free"
+        ]
       }
     }
   }
