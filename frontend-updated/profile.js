@@ -1,43 +1,23 @@
-// import { data } from 'jquery';
-// import $ from '/js/libs/jquery/dist/jquery.js';
-
-
-// import allRecipes from './quiz.js';
-
-
-
+let dataArr;
 function renderRecipeCard(recipe) {
-    console.log(recipe);
+    // console.log(recipe);
 
     let list = `<ul>`;
 
-    for (let i = 0; i < recipe.length; i++) {
-        list += `<li>${recipe.ingredients[i].id} - ${recipe.ingredients[i].quantity}</li>`;
-        console.log(list)
+    for (let i = 0; i < recipe.ingredients.length; i++) {
+        list += `<li>${recipe.ingredients[i].text}</li>`;
+        // console.log(list)
     };
     list += `</ul>`;
-
-
-    console.log(list)
-
-    // let dishType = getRandomLabel(recipe.dishType);
-    // let dietLabel = getRandomLabel(recipe.dietLabel);
-    // let healthLabel = getRandomLabel(recipe.healthLabel);
-
-
-
-    // console.log(dishType)
-
-  
-        let card = `
-                    <div class="box" id="${recipe.uri}">
-                    
+    let card = `
+                    <div class="box" id="${recipe.id}">
+    
                         <img class="recipe_img" src="${recipe.img}">
                             <article class="media">
                             
                                 <div class="content">
                                     <p>
-                                        <strong> <a href="${recipe.url}">${recipe.label}</a></strong><small> ${recipe.createdAt}</small>
+                                        <strong> <a href="${recipe.url}">${recipe.label}</a></strong>
                                         <br>
                                         <small>${recipe.cals} cals</small>
                                         <br>
@@ -58,28 +38,64 @@ function renderRecipeCard(recipe) {
                         </div>
              `;
 
-        $('.cardRoot').prepend(card);
-    
+    $('.cardRoot').prepend(card);
+
 }
-
-
-
 
 function handleEditButton(event) {
     event.preventDefault();
+    
+    console.log('edit')
+    console.log(event.target.id)
 
+    let curr = event.target.id;
+    let recipe = dataArr.find(r => r.id = curr)
+    // console.log(currRecipe)
+    let myList = `<ul>`;
+
+    for (let i = 0; i < recipe.ingredients.length; i++) {
+        myList += `<li><input type="text" placeholder="${recipe.ingredients[i].text}"></li>`;
+        // console.log(list)
+    };
+    myList += `</ul>`;
     let editForm = `
-    `;
+    <div class="box" id="${recipe.label.split(" ").join("")}">
+    <img class="recipe_img" src="${recipe.img}">
+    <article class="media">
+                            
+    <div class="field">
+        <p>
+
+            <strong> <a href="${recipe.url}"><input class="input" type="text" placeholder="${recipe.label}"></input></a></strong>
+            <br>
+            <small>${recipe.cals} cals</small>
+            <br>
+            
+            ${myList}
+            </p>
+    </div>
+</article>
+<div class="tags mt-3">
+
+    
+</div>
+<div class="tags">
+<button id="${recipe.label.split(" ").join("")}" class=" button submitCard m-1 is-small is-warning">Submit <i class="fas fa-check"></i></button>
+</div>
+
+
+</div>
+
+    `
 
     $('#' + event.target.id).replaceWith(editForm);
-
 }
 
 function handleDeleteButton(event) {
     event.preventDefault();
     //insert axios call
-
-    $('#' + event.target.id).replaceWith(``);
+    console.log('delete')
+    $('#' + event.target.id).replaceWith(``).remove();
 
 
 }
@@ -93,15 +109,17 @@ async function getRecipes() {
             headers: { Authorization: `Bearer ${token}` },
             "type": "merge",
         });
-        console.log(recipe.data);
-        console.log(recipe.data.result);
-        let dataArr = Object.values(recipe.data.result);
+        // console.log(recipe.data);
+        // console.log(recipe.data.result);
+        dataArr = Object.values(recipe.data.result);
         console.log(dataArr);
 
-        for(let i=0; i< dataArr.length; i++){
-            renderRecipeCard(dataArr[i]); 
+        for (let i = 0; i < dataArr.length; i++) {
+            // dataArr[i].date = getDate();
+            dataArr[i].id = i;
+            renderRecipeCard(dataArr[i]);
         }
-       
+
     } catch (error) {
         alert(error);
     }
@@ -111,10 +129,12 @@ async function getRecipes() {
 
 $(function () {
     getRecipes();
-    $(document).on('click', '.edit', function(){
-        console.log('edit')
-    });
-    // $(document).on('click', '.delete', handleDeleteButton);
+    // $(document).on('click', '.edit', function () {
+    //     console.log('edit')
+    // });
+    $(document).on('click', '.deleteCard', handleDeleteButton);
+    $(document).on('click', '.edit', handleEditButton);
+
 });
 
 
@@ -132,9 +152,10 @@ function getRandomLabel(labelArr) {
 }
 
 
-function getDate(){
-    var d = new Date();
-    let month = d.getMonth() + 1;
-    let day = d.getDay() + 1;
-    return (month + '/' + day)
-}
+// function getDate() {
+//     var d = new Date();
+//     let month = d.getMonth() + 1;
+//     let day = d.getDay() + 1;
+//     return '12/4'
+//     // return (month + '/' + day)
+// }

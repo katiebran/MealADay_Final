@@ -407,7 +407,6 @@ async function addUser(id){
               "ingredients": recipe.ingredients,
               "dietLabel": recipe.dietLabels,
               "healthLabel": recipe.healthLabels,
-              "date": date,
             }
         }
     });
